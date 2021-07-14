@@ -1,0 +1,2047 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="http://www.cheumsketch.co.kr/jjindealEventInfo.do"
+    />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="&nbsp;" />
+    <meta
+      property="og:image"
+      content="http://www.cheumsketch.co.kr/img/common/cheum_sns_logo.jpg"
+    />
+    <title>Pub_Event_NH농협카드 채움스케치</title>
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      href="/lib/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="/lib/animate.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/common.css?200318" />
+    <link rel="stylesheet" href="/css/sub.css?200717" />
+    <link rel="stylesheet" href="/css/event-month.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+
+    <!-- //css -->
+    <!-- js -->
+    <script src="/lib/jquery-3.2.1.js"></script>
+    <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/js/log.js?190621"></script>
+    <script src="/js/common.js?200715"></script>
+    <script src="/js/sub.js?200710"></script>
+    <script type="text/javascript" src="/js/kakao_api.js"></script>
+    <!-- //js -->
+
+    <script type="text/javascript">
+      $("document").ready(function () {
+        var num = "12";
+        var snum = "7";
+
+        if (num == "1") {
+          $("#header").addClass("shopping_head");
+          $("#header").css("height", "213px");
+        } else if (num == "2") {
+          $("#header").addClass("travel_head");
+          $("#header").css("height", "173px");
+        } else if (num == "3") {
+          $("#header").addClass("leisure_head");
+        } else if (num == "4") {
+          $("#header").addClass("golf_head");
+        } else if (num == "5") {
+          $("#header").addClass("edu_head");
+        } else if (num == "6") {
+          $("#header").addClass("infant_head");
+        } else if (num == "7") {
+          $("#header").addClass("beauty_head");
+        } else if (num == "8") {
+          $("#header").addClass("pet_head");
+        } else if (num == "9") {
+          $("#header").addClass("life_head");
+        } else if (num == "10") {
+          $("#header").addClass("coupon_head");
+        } else if (num == "11") {
+          $("#header").addClass("customer_head");
+        } else if (num == "12") {
+          $("#header").addClass("customer_head");
+        }
+
+        if (num > 9) {
+          $(".li" + num).addClass("on");
+        } else {
+          $(".li0" + num).addClass("on");
+        }
+
+        $("#menu_" + num + "_" + snum).addClass("on");
+      });
+
+      window.Clipboard = (function (window, document, navigator) {
+        var textArea, copy;
+        function isOS() {
+          return navigator.userAgent.match(/ipad|iphone/i);
+        }
+
+        function createTextArea(text) {
+          textArea = document.createElement("textArea");
+          textArea.readonly = "readonly";
+          textArea.value = text;
+          document.body.appendChild(textArea);
+        }
+
+        function selectText() {
+          var range, selection;
+
+          if (isOS()) {
+            range = document.createRange();
+            range.selectNodeContents(textArea);
+            selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            textArea.setSelectionRange(0, 20);
+          } else {
+            textArea.select();
+          }
+        }
+
+        function copyToClipboard() {
+          document.execCommand("copy");
+          document.body.removeChild(textArea);
+          alert(
+            "링크주소가 복사되었습니다.\n붙여넣기를 통해 공유가 가능합니다."
+          );
+        }
+
+        copy = function (text) {
+          createTextArea(text);
+          selectText();
+          copyToClipboard();
+        };
+
+        return {
+          copy: copy,
+        };
+      })(window, document, navigator);
+    </script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-154355321-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-154355321-1");
+    </script>
+     
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="hd_top clearfix">
+          <div class="layout_wrap">
+            <h1 class="logo">
+              <a
+                href="https://card.nonghyup.com"
+                class="img_box"
+                target="_blank"
+                ><img
+                  src="/img/common/logo.jpg"
+                  alt="올바른 생활카드 농협카드" /></a
+              ><span class="img_box"
+                ><a href="/main.do" class="img_box"
+                  ><img
+                    src="/img/common/logo_sub.jpg"
+                    alt="채움스케치 생활,문화 할인 서비스" /></a
+              ></span>
+            </h1>
+            <ul class="hd_top_menu clearfix">
+              <!-- <li class="li01"><a onclick="goNhcmu('13', '1', 'http://www.nhcardsoho.com/index.do', '_blank')" style="cursor:pointer;">개인사업자 특별 서비스</a></li> -->
+              <li class="li02">
+                <a
+                  onclick="goNhcmulist('12', '1', '/event/list.do', '_self', '4', '401', '')"
+                  style="cursor: pointer"
+                  >이벤트</a
+                >
+              </li>
+              <li class="li03">
+                <a
+                  onclick="goNhcmu('11', '1', '/usage_guide.do', '_self')"
+                  style="cursor: pointer"
+                  >이용가이드</a
+                >
+              </li>
+            </ul>
+            <div class="hd_soho_menu">
+              <a
+                onclick="goNhcmu('13', '1', 'http://www.nhcardsoho.com/index.do', '_blank')"
+                style="cursor: pointer"
+                ><img
+                  src="/img/common/btn_header_soho.jpg"
+                  width="173"
+                  height="28"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="hd_bottom">
+          <nav id="gnb">
+            <h2 class="txt_hide">주메뉴</h2>
+            <ul class="clearfix depth01">
+              <li class="li01">
+                <a
+                  onclick="goNhcmu('1', '1', '/shopMain.do', '_self')"
+                  style="cursor: pointer"
+                  >쇼핑</a
+                >
+                <div class="depth02 shop_01">
+                  <ul>
+                    <!-- 								<li id="menu_1_14"><a onclick="goNhcmu('1', '14', '/contents_43.do', '_self')" style="cursor:pointer;">TLC몰</a></li> -->
+
+                    <li id="menu_1_7">
+                      <a
+                        onclick="goNhcmu('1', '7', '/contents_6.do', '_self')"
+                        style="cursor: pointer"
+                        >11번가</a
+                      >
+                    </li>
+                    <li id="menu_1_12">
+                      <a
+                        onclick="goNhcmu('1', '12', '/contents_37.do', '_self')"
+                        style="cursor: pointer"
+                        >위메프</a
+                      >
+                    </li>
+                    <!-- 								<li id="menu_1_13"><a onclick="goNhcmu('1', '13', '/contents_39.do', '_self')" style="cursor:pointer;">골프큐브</a></li> -->
+                    <li id="menu_1_2">
+                      <a
+                        onclick="goNhcmu('1', '2', '/contents_1.do', '_self')"
+                        style="cursor: pointer"
+                        >농협몰</a
+                      >
+                    </li>
+                    <li id="menu_1_3">
+                      <a
+                        onclick="goNhcmu('1', '3', '/contents_2.do', '_self')"
+                        style="cursor: pointer"
+                        >INTERPARK</a
+                      >
+                    </li>
+                    <li id="menu_1_4">
+                      <a
+                        onclick="goNhcmu('1', '4', '/contents_3.do', '_self')"
+                        style="cursor: pointer"
+                        >AKmall.com</a
+                      >
+                    </li>
+                    <li id="menu_1_6">
+                      <a
+                        onclick="goNhcmu('1', '6', '/contents_5.do', '_self')"
+                        style="cursor: pointer"
+                        >LG생활건강</a
+                      >
+                    </li>
+                    <!-- <li id="menu_1_5"><a onclick="goNhcmu('1', '5', '/contents_4.do', '_self')" style="cursor:pointer;">Lotte.com</a></li> -->
+                    <li id="menu_1_11">
+                      <a
+                        onclick="goNhcmu('1', '11', '/contents_36.do', '_self')"
+                        style="cursor: pointer"
+                        >언니네 상회</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="li02">
+                <a
+                  onclick="goNhcmu('2', '1', '/tripMain.do', '_self')"
+                  style="cursor: pointer"
+                  >여행</a
+                >
+                <div class="depth02 shop_02">
+                  <ul>
+                    <li id="menu_2_19">
+                      <a
+                        onclick="goNhcmu('2', '19', '/contents_13.do', '_self')"
+                        style="cursor: pointer"
+                        >국내&amp;제주</a
+                      >
+                    </li>
+                    <li id="menu_2_2">
+                      <a
+                        onclick="goNhcmu('2', '2', '/contents_7.do', '_self')"
+                        style="cursor: pointer"
+                        >해외 패키지</a
+                      >
+                    </li>
+                    <li id="menu_2_6">
+                      <a
+                        onclick="goNhcmu('2', '6', '/contents_8.do', '_self')"
+                        style="cursor: pointer"
+                        >익스피디아</a
+                      >
+                    </li>
+                    <!-- 								<li id="menu_2_27"><a onclick="goNhcmu('2', '27', '/contents_41.do', '_self')" style="cursor:pointer;">트립닷컴</a></li> -->
+                    <li id="menu_2_28">
+                      <a
+                        onclick="goNhcmu('2', '28', '/contents_44.do', '_self')"
+                        style="cursor: pointer"
+                        >공항주차</a
+                      >
+                    </li>
+                    <li id="menu_2_29">
+                      <a
+                        onclick="goNhcmu('2', '29', '/contents_45.do', '_self')"
+                        style="cursor: pointer"
+                        >스테이앤모어</a
+                      >
+                    </li>
+                    <!-- 								<li id="menu_2_26"><a onclick="goNhcmu('2', '26', '/contents_38.do', '_self')" style="cursor:pointer;">공항픽업</a></li> -->
+                    <li id="menu_2_7">
+                      <a
+                        onclick="goNhcmu('2', '7', '/contents_9.do', '_self')"
+                        style="cursor: pointer"
+                        >하나투어호텔</a
+                      >
+                    </li>
+                    <li id="menu_2_10">
+                      <a
+                        onclick="goNhcmu('2', '10', '/contents_10.do', '_self')"
+                        style="cursor: pointer"
+                        >항공</a
+                      >
+                    </li>
+                    <li id="menu_2_11">
+                      <a
+                        onclick="goNhcmu('2', '11', '/contents_11.do', '_self')"
+                        style="cursor: pointer"
+                        >골프/허니문</a
+                      >
+                    </li>
+                    <li id="menu_2_18">
+                      <a
+                        onclick="goNhcmu('2', '18', '/contents_12.do', '_self')"
+                        style="cursor: pointer"
+                        >크루즈</a
+                      >
+                    </li>
+                    <li id="menu_2_23">
+                      <a
+                        onclick="goNhcmu('2', '23', '/contents_14.do', '_self')"
+                        style="cursor: pointer"
+                        >고팜N체험</a
+                      >
+                    </li>
+                    <!-- <li id="menu_2_24"><a onclick="goNhcmu('2', '24', '/contents_15.do', '_self')" style="cursor:pointer;">입장권</a></li> -->
+                    <li id="menu_2_25">
+                      <a
+                        onclick="goNhcmu('2', '25', '/contents_16.do', '_self')"
+                        style="cursor: pointer"
+                        >맞춤여행</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- 					<li class="li03">
+						<a onclick="goNhcmu('3', '2', '/contents_40.do', '_self')" style="cursor:pointer;">액티비티</a>
+						<div class="depth02 shop_03">
+							<ul>
+								<li id="menu_3_2" style="margin-left:185px;"><a onclick="goNhcmu('3', '2', '/contents_40.do', '_self')" style="cursor:pointer;">트립닷컴</a></li>
+							</ul>
+						</div>
+					</li> -->
+              <li class="li04">
+                <a
+                  onclick="goNhcmu('4', '1', '/golfMain.do', '_self')"
+                  style="cursor: pointer"
+                  >골프</a
+                >
+                <div class="depth02 shop_04">
+                  <ul style="width: 900px !important">
+                    <li id="menu_4_0">
+                      <a
+                        onclick="goNhcmu('4', '0', '/golfMain.do', '_self')"
+                        style="cursor: pointer"
+                        >홈</a
+                      >
+                    </li>
+                    <li id="menu_4_2">
+                      <a
+                        onclick="goNhcmu('4', '2', '/golfMain.do', '_self')"
+                        style="cursor: pointer"
+                        >부킹서비스</a
+                      >
+                    </li>
+                    <li id="menu_4_3">
+                      <a
+                        onclick="goNhcmu('4', '3', '/golfMain.do', '_self')"
+                        style="cursor: pointer"
+                        >소셜커머스</a
+                      >
+                    </li>
+                    <li id="menu_4_4">
+                      <a
+                        onclick="goNhcmu('4', '4', '/golfMain.do', '_self')"
+                        style="cursor: pointer"
+                        >골프 여행 서비스</a
+                      >
+                    </li>
+                    <li id="menu_4_5">
+                      <a
+                        onclick="goNhcmu('4', '5', '/golfMain.do', '_self')"
+                        style="cursor: pointer"
+                        >제주 지역 렌트카</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="li05">
+                <a
+                  onclick="goNhcmu('5', '1', '/eduMain.do', '_self')"
+                  style="cursor: pointer"
+                  >교육</a
+                >
+                <div class="depth02 shop_05">
+                  <ul>
+                    <li id="menu_5_0" style="margin-right: 15px">
+                      <a
+                        onclick="goNhcmu('5', '0', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >홈</a
+                      >
+                    </li>
+                    <li id="menu_5_2" style="margin-right: 15px">
+                      <a
+                        onclick="goNhcmu('5', '2', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >생생 외국어</a
+                      >
+                    </li>
+                    <li id="menu_5_3" style="margin-right: 15px">
+                      <a
+                        onclick="goNhcmu('5', '3', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >자녀 학습</a
+                      >
+                    </li>
+                    <li id="menu_5_4" style="margin-right: 15px">
+                      <a
+                        onclick="goNhcmu('5', '4', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >교육 컨설팅</a
+                      >
+                    </li>
+                    <li id="menu_5_5" style="margin-right: 15px">
+                      <a
+                        onclick="goNhcmu('5', '5', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >교양 강좌</a
+                      >
+                    </li>
+                    <li id="menu_5_6" style="margin-right: 15px">
+                      <a
+                        onclick="goNhcmu('5', '6', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >생활/여가</a
+                      >
+                    </li>
+                    <li id="menu_5_7" style="margin-right: 15px">
+                      <a
+                        onclick="goNhcmu('5', '7', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >홈닥터</a
+                      >
+                    </li>
+                    <li id="menu_5_8" style="margin-right: 15px">
+                      <a
+                        onclick="goNhcmu('5', '8', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >운세</a
+                      >
+                    </li>
+                    <li id="menu_5_9" style="margin-right: 15px">
+                      <a
+                        onclick="goNhcmu('5', '9', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >프리미엄강좌</a
+                      >
+                    </li>
+                    <li id="menu_5_10" style="margin-right: 15px">
+                      <a
+                        onclick="goNhcmu('5', '10', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >이용 안내</a
+                      >
+                    </li>
+                    <li id="menu_5_11" style="margin-right: 15px">
+                      <a
+                        onclick="goNhcmu('5', '11', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >이벤트</a
+                      >
+                    </li>
+                    <li id="menu_5_12" style="margin-right: 15px">
+                      <a
+                        onclick="goNhcmu('5', '12', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >멤버십</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="li06">
+                <a
+                  onclick="goNhcmu('6', '1', '/contents_18.do', '_self')"
+                  style="cursor: pointer"
+                  >육아</a
+                >
+                <div class="depth02 shop_06">
+                  <ul>
+                    <li id="menu_6_1" style="margin-left: -210px">
+                      <a
+                        onclick="goNhcmu('6', '1', '/contents_18.do', '_self')"
+                        style="cursor: pointer"
+                        >산후 조리원</a
+                      >
+                    </li>
+                    <!-- 								<li id="menu_6_2"><a onclick="goNhcmu('6', '2', '/contents_19.do', '_self')" style="cursor:pointer;">베이비시터</a></li>
+								<li id="menu_6_3"><a onclick="goNhcmu('6', '3', '/contents_20.do', '_self')" style="cursor:pointer;">키즈 카페</a></li> -->
+                    <li id="menu_6_4">
+                      <a
+                        onclick="goNhcmu('6', '4', '/contents_21.do', '_self')"
+                        style="cursor: pointer"
+                        >출산육아용품몰</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="li07">
+                <a
+                  onclick="goNhcmu('7', '1', '/contents_22.do', '_self')"
+                  style="cursor: pointer"
+                  >뷰티</a
+                >
+                <div class="depth02 shop_07">
+                  <ul>
+                    <li id="menu_7_1" style="margin-left: 120px">
+                      <a
+                        onclick="goNhcmu('7', '1', '/contents_22.do', '_self')"
+                        style="cursor: pointer"
+                        >두피 관리샵</a
+                      >
+                    </li>
+                    <!-- <li id="menu_7_2"><a onclick="goNhcmu('7', '2', '/contents_23.do', '_self')" style="cursor:pointer;">네일숍</a></li> -->
+                  </ul>
+                </div>
+              </li>
+              <li class="li08">
+                <a
+                  onclick="goNhcmu('8', '1', '/contents_24.do', '_self')"
+                  style="cursor: pointer"
+                  >펫</a
+                >
+                <div class="depth02 shop_08">
+                  <ul>
+                    <li id="menu_8_1">
+                      <a
+                        onclick="goNhcmu('8', '1', '/contents_24.do', '_self')"
+                        style="cursor: pointer"
+                        >펫 쇼핑몰</a
+                      >
+                    </li>
+                    <li id="menu_8_2">
+                      <a
+                        onclick="goNhcmu('8', '2', '/contents_25.do', '_self')"
+                        style="cursor: pointer"
+                        >동물병원</a
+                      >
+                    </li>
+                    <li id="menu_8_3">
+                      <a
+                        onclick="goNhcmu('8', '3', '/contents_26.do', '_self')"
+                        style="cursor: pointer"
+                        >카페·펜션·호텔</a
+                      >
+                    </li>
+                    <li id="menu_8_4">
+                      <a
+                        onclick="goNhcmu('8', '4', '/contents_27.do', '_self')"
+                        style="cursor: pointer"
+                        >교육·미용·서비스</a
+                      >
+                    </li>
+                    <li id="menu_8_5">
+                      <a
+                        onclick="goNhcmu('8', '5', '/contents_28.do', '_self')"
+                        style="cursor: pointer"
+                        >식품·용품</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="li09">
+                <a
+                  onclick="goNhcmu('9', '1', '/contents_29.do', '_self')"
+                  style="cursor: pointer"
+                  >라이프</a
+                >
+                <div class="depth02 shop_09">
+                  <ul>
+                    <li id="menu_9_1">
+                      <a
+                        onclick="goNhcmu('9', '1', '/contents_29.do', '_self')"
+                        style="cursor: pointer"
+                        >심리상담</a
+                      >
+                    </li>
+                    <li id="menu_9_2">
+                      <a
+                        onclick="goNhcmu('9', '2', '/contents_30.do', '_self')"
+                        style="cursor: pointer"
+                        >자동차보험</a
+                      >
+                    </li>
+                    <!-- <li id="menu_9_3"><a onclick="goNhcmu('9', '3', '/contents_31.do', '_self')" style="cursor:pointer;">정기배송</a></li> -->
+                    <li id="menu_9_4" style="margin-right: 150px">
+                      <a
+                        onclick="goNhcmu('9', '4', '/contents_32.do', '_self')"
+                        style="cursor: pointer"
+                        >상조</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- 
+					<li class="li10">
+						<a onclick="goNhcmu('10', '1', '/contents_33.do', '_self')" style="cursor:pointer;">티켓/쿠폰</a>
+						<div class="depth02 shop_10">
+							<ul style="width:540px !important;">
+								<li id="menu_10_1"><a onclick="goNhcmu('10', '1', '/contents_33.do', '_self')" style="cursor:pointer;">공연 티켓</a></li>
+								<li id="menu_10_5" style="margin-right:50px;"><a onclick="goNhcmu('10', '5', '/contents_42.do', '_self')" style="cursor:pointer;">영화 티켓</a></li>
+							</ul>
+						</div>
+					</li>
+ -->
+              <li class="li12">
+                <div class="depth02 shop_12">
+                  <ul>
+                    <li class="sub_tit01">
+                      이벤트<i class="fa fa-angle-right"></i>
+                    </li>
+                    <li id="menu_12_1">
+                      <a
+                        onclick="goNhcmulist('12', '1', '/event/list.do', '_self', '4', '401', '')"
+                        style="cursor: pointer"
+                        >진행중인 이벤트</a
+                      >
+                    </li>
+                    <li id="menu_12_7">
+                      <a
+                        onclick="goNhcmu('12', '7', '/jjindealEventInfo.do', '_self')"
+                        style="cursor: pointer"
+                        >찐딜</a
+                      >
+                    </li>
+                    <li id="menu_12_2">
+                      <a
+                        onclick="goNhcmu('12', '2', '/event/funny.do', '_self')"
+                        style="cursor: pointer"
+                        >퍼니프라이스</a
+                      >
+                    </li>
+                    <li id="menu_12_6">
+                      <a
+                        onclick="goNhcmu('12', '6', '/newslatter.do', '_self')"
+                        style="cursor: pointer"
+                        >소식지</a
+                      >
+                    </li>
+                    <!-- <li id="menu_12_5"><a onclick="goNhcmu('12', '5', '/event/hotitem.do', '_self')" style="cursor:pointer;">핫아이템</a></li> -->
+                    <li id="menu_12_3">
+                      <a
+                        onclick="goNhcmulist('12', '3', '/event/list.do', '_self', '4', '403', '')"
+                        style="cursor: pointer"
+                        >지난 이벤트</a
+                      >
+                    </li>
+                    <li id="menu_12_4">
+                      <a
+                        onclick="goNhcmulist('12', '4', '/event/list.do', '_self', '4', '402', '')"
+                        style="cursor: pointer"
+                        >당첨자 발표</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="li11">
+                <div class="depth02 shop_11">
+                  <ul>
+                    <li class="sub_tit01">
+                      고객센터<i class="fa fa-angle-right"></i>
+                    </li>
+                    <li id="menu_11_1">
+                      <a
+                        onclick="goNhcmu('11', '1', '/usage_guide.do', '_self')"
+                        style="cursor: pointer"
+                        >이용가이드</a
+                      >
+                    </li>
+                    <!-- <li id="menu_11_2"><a onclick="goNhcmu('11', '2', '/nhserviceinfo.do', '_self')" style="cursor:pointer;">NH농협 서비스 안내</a></li> -->
+                    <li id="menu_11_3">
+                      <a
+                        onclick="goNhcmulist('11', '3', '/board/list.do', '_self', '1','101', '')"
+                        style="cursor: pointer"
+                        >공지사항</a
+                      >
+                    </li>
+                    <li id="menu_11_4">
+                      <a
+                        onclick="goNhcmulist('11', '4', '/board/list.do', '_self', '2','201', '')"
+                        style="cursor: pointer"
+                        >자주 묻는 질문</a
+                      >
+                    </li>
+                    <li id="menu_11_5">
+                      <a
+                        onclick="goNhcmu('11', '5', '/qna.do', '_self')"
+                        style="cursor: pointer"
+                        >1:1문의</a
+                      >
+                    </li>
+                    <li id="menu_11_6">
+                      <a
+                        onclick="goNhcmu('11', '6', '/use_agreement.do', '_self')"
+                        style="cursor: pointer"
+                        >이용약관</a
+                      >
+                    </li>
+                    <li id="menu_11_7">
+                      <a
+                        onclick="goNhcmu('11', '7', '/individual.do', '_self')"
+                        style="cursor: pointer"
+                        >개인정보처리방침</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <div class="all_menu_wrap">
+              <button class="menu_all_open">전체메뉴 열기</button>
+            </div>
+          </nav>
+
+          <div class="manu_all_wrap">
+            <div class="hd_top clearfix">
+              <div class="layout_wrap">
+                <h1 class="logo">
+                  <a href="https://card.nonghyup.com" class="img_box"
+                    ><img
+                      src="/img/common/logo.jpg"
+                      alt="올바른 생활카드 농협카드" /></a
+                  ><span class="img_box"
+                    ><a href="/main.do"
+                      ><img
+                        src="/img/common/logo_sub.jpg"
+                        alt="채움스케치 생활,문화 할인 서비스" /></a
+                  ></span>
+                </h1>
+                <ul class="hd_top_menu clearfix">
+                  <!-- <li class="li01"><a onclick="goNhcmu('13', '1', 'http://www.nhcardsoho.com/index.do', '_blank')" style="cursor:pointer;">개인사업자 특별 서비스</a></li> -->
+                  <li class="li02">
+                    <a
+                      onclick="goNhcmulist('12', '1', '/event/list.do', '_self', '4','401', '')"
+                      style="cursor: pointer"
+                      >이벤트</a
+                    >
+                  </li>
+                  <li class="li03">
+                    <a
+                      onclick="goNhcmu('11', '1', '/usage_guide.do', '_self')"
+                      style="cursor: pointer"
+                      >이용가이드</a
+                    >
+                  </li>
+                </ul>
+                <div class="hd_soho_menu">
+                  <a
+                    onclick="goNhcmu('13', '1', 'http://www.nhcardsoho.com/index.do', '_blank')"
+                    style="cursor: pointer"
+                    ><img
+                      src="/img/common/btn_header_soho.jpg"
+                      width="173"
+                      height="28"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <h2 class="txt_hide">전체메뉴</h2>
+            <nav id="menuAll" class="clearfix">
+              <ul class="main_menu clearfix layout_wrap">
+                <li>
+                  <a
+                    onclick="goNhcmu('1', '1', '/shopMain.do', '_self')"
+                    style="cursor: pointer"
+                    >쇼핑</a
+                  >
+                  <ul class="li01">
+                    <!-- 				<li id="menu_1_14"><a onclick="goNhcmu('1', '14', '/contents_43.do', '_self')" style="cursor:pointer;">TLC몰</a></li> -->
+
+                    <li id="menu_1_7">
+                      <a
+                        onclick="goNhcmu('1', '7', '/contents_6.do', '_self')"
+                        style="cursor: pointer"
+                        >11번가</a
+                      >
+                    </li>
+                    <li id="menu_1_12">
+                      <a
+                        onclick="goNhcmu('1', '12', '/contents_37.do', '_self')"
+                        style="cursor: pointer"
+                        >위메프</a
+                      >
+                    </li>
+                    <!-- 				<li id="menu_1_13"><a onclick="goNhcmu('1', '13', '/contents_39.do', '_self')" style="cursor:pointer;">골프큐브</a></li> -->
+                    <li id="menu_1_2">
+                      <a
+                        onclick="goNhcmu('1', '2', '/contents_1.do', '_self')"
+                        style="cursor: pointer"
+                        >농협몰</a
+                      >
+                    </li>
+                    <li id="menu_1_3">
+                      <a
+                        onclick="goNhcmu('1', '3', '/contents_2.do', '_self')"
+                        style="cursor: pointer"
+                        >INTERPARK</a
+                      >
+                    </li>
+                    <li id="menu_1_4">
+                      <a
+                        onclick="goNhcmu('1', '4', '/contents_3.do', '_self')"
+                        style="cursor: pointer"
+                        >AKmall.com</a
+                      >
+                    </li>
+                    <li id="menu_1_6">
+                      <a
+                        onclick="goNhcmu('1', '6', '/contents_5.do', '_self')"
+                        style="cursor: pointer"
+                        >LG생활건강</a
+                      >
+                    </li>
+                    <!-- <li id="menu_1_5"><a onclick="goNhcmu('1', '5', '/contents_4.do', '_self')" style="cursor:pointer;">Lotte.com</a></li> -->
+                    <li id="menu_1_11">
+                      <a
+                        onclick="goNhcmu('1', '11', '/contents_36.do', '_self')"
+                        style="cursor: pointer"
+                        >언니네 상회</a
+                      >
+                    </li>
+                  </ul>
+                  <a
+                    onclick="goNhcmu('2', '1', '/tripMain.do', '_self')"
+                    style="cursor: pointer"
+                    >여행</a
+                  >
+                  <ul class="li02">
+                    <li id="menu_2_19">
+                      <a
+                        onclick="goNhcmu('2', '19', '/contents_13.do', '_self')"
+                        style="cursor: pointer"
+                        >국내&amp;제주</a
+                      >
+                    </li>
+                    <li id="menu_2_2">
+                      <a
+                        onclick="goNhcmu('2', '2', '/contents_7.do', '_self')"
+                        style="cursor: pointer"
+                        >해외 패키지</a
+                      >
+                    </li>
+                    <li id="menu_2_6">
+                      <a
+                        onclick="goNhcmu('2', '6', '/contents_8.do', '_self')"
+                        style="cursor: pointer"
+                        >익스피디아</a
+                      >
+                    </li>
+                    <!-- 				<li id="menu_2_27"><a onclick="goNhcmu('2', '27', '/contents_41.do', '_self')" style="cursor:pointer;">트립닷컴</a></li> -->
+                    <li id="menu_2_28">
+                      <a
+                        onclick="goNhcmu('2', '28', '/contents_44.do', '_self')"
+                        style="cursor: pointer"
+                        >공항주차</a
+                      >
+                    </li>
+                    <li id="menu_2_29">
+                      <a
+                        onclick="goNhcmu('2', '29', '/contents_45.do', '_self')"
+                        style="cursor: pointer"
+                        >스테이앤모어</a
+                      >
+                    </li>
+                    <!-- 				<li id="menu_2_26"><a onclick="goNhcmu('2', '26', '/contents_38.do', '_self')" style="cursor:pointer;">공항픽업</a></li> -->
+                    <li id="menu_2_7">
+                      <a
+                        onclick="goNhcmu('2', '7', '/contents_9.do', '_self')"
+                        style="cursor: pointer"
+                        >하나투어호텔</a
+                      >
+                    </li>
+                    <li id="menu_2_10">
+                      <a
+                        onclick="goNhcmu('2', '10', '/contents_10.do', '_self')"
+                        style="cursor: pointer"
+                        >항공</a
+                      >
+                    </li>
+                    <li id="menu_2_11">
+                      <a
+                        onclick="goNhcmu('2', '11', '/contents_11.do', '_self')"
+                        style="cursor: pointer"
+                        >골프/허니문</a
+                      >
+                    </li>
+                    <li id="menu_2_18">
+                      <a
+                        onclick="goNhcmu('2', '18', '/contents_12.do', '_self')"
+                        style="cursor: pointer"
+                        >크루즈</a
+                      >
+                    </li>
+                    <li id="menu_2_23">
+                      <a
+                        onclick="goNhcmu('2', '23', '/contents_14.do', '_self')"
+                        style="cursor: pointer"
+                        >고팜N체험</a
+                      >
+                    </li>
+                    <!-- <li id="menu_2_24"><a onclick="goNhcmu('2', '24', '/contents_15.do', '_self')" style="cursor:pointer;">입장권</a></li> -->
+                    <li id="menu_2_25">
+                      <a
+                        onclick="goNhcmu('2', '25', '/contents_16.do', '_self')"
+                        style="cursor: pointer"
+                        >맞춤여행</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <!-- 			<a onclick="goNhcmu('3', '2', '/contents_40.do', '_self')" style="cursor:pointer;">액티비티</a>
+			<ul class="li03">
+				<li id="menu_3_2"><a onclick="goNhcmu('3', '2', '/contents_40.do', '_self')" style="cursor:pointer;">트립닷컴</a></li>
+			</ul> -->
+                  <a
+                    onclick="goNhcmu('4', '1', '/golfMain.do', '_self')"
+                    style="cursor: pointer"
+                    >골프</a
+                  >
+                  <ul class="li04">
+                    <li id="menu_4_2">
+                      <a
+                        onclick="goNhcmu('4', '2', '/golfMain.do', '_self')"
+                        style="cursor: pointer"
+                        >부킹서비스</a
+                      >
+                    </li>
+                    <li id="menu_4_3">
+                      <a
+                        onclick="goNhcmu('4', '3', '/golfMain.do', '_self')"
+                        style="cursor: pointer"
+                        >소셜커머스</a
+                      >
+                    </li>
+                    <li id="menu_4_4">
+                      <a
+                        onclick="goNhcmu('4', '4', '/golfMain.do', '_self')"
+                        style="cursor: pointer"
+                        >골프 여행 서비스</a
+                      >
+                    </li>
+                    <li id="menu_4_5">
+                      <a
+                        onclick="goNhcmu('4', '5', '/golfMain.do', '_self')"
+                        style="cursor: pointer"
+                        >제주 지역 렌트카</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    onclick="goNhcmu('5', '1', '/eduMain.do', '_self')"
+                    style="cursor: pointer"
+                    >교육</a
+                  >
+                  <ul class="li05">
+                    <li id="menu_5_2">
+                      <a
+                        onclick="goNhcmu('5', '2', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >생생 외국어</a
+                      >
+                    </li>
+                    <li id="menu_5_3">
+                      <a
+                        onclick="goNhcmu('5', '3', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >자녀 학습</a
+                      >
+                    </li>
+                    <li id="menu_5_4">
+                      <a
+                        onclick="goNhcmu('5', '4', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >교육 컨설팅</a
+                      >
+                    </li>
+                    <li id="menu_5_5">
+                      <a
+                        onclick="goNhcmu('5', '5', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >교양 강좌</a
+                      >
+                    </li>
+                    <li id="menu_5_6">
+                      <a
+                        onclick="goNhcmu('5', '6', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >생활/여가</a
+                      >
+                    </li>
+                    <li id="menu_5_7">
+                      <a
+                        onclick="goNhcmu('5', '7', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >홈닥터</a
+                      >
+                    </li>
+                    <li id="menu_5_8">
+                      <a
+                        onclick="goNhcmu('5', '8', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >운세</a
+                      >
+                    </li>
+                    <li id="menu_5_9">
+                      <a
+                        onclick="goNhcmu('5', '9', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >프리미엄강좌</a
+                      >
+                    </li>
+                    <li id="menu_5_10">
+                      <a
+                        onclick="goNhcmu('5', '10', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >이용 안내</a
+                      >
+                    </li>
+                    <li id="menu_5_11">
+                      <a
+                        onclick="goNhcmu('5', '11', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >이벤트</a
+                      >
+                    </li>
+                    <li id="menu_5_12">
+                      <a
+                        onclick="goNhcmu('5', '12', '/eduMain.do', '_self')"
+                        style="cursor: pointer"
+                        >멤버십</a
+                      >
+                    </li>
+                  </ul>
+                  <a
+                    onclick="goNhcmu('6', '1', '/contents_18.do', '_self')"
+                    style="cursor: pointer"
+                    >육아</a
+                  >
+                  <ul class="li06">
+                    <li id="menu_6_1">
+                      <a
+                        onclick="goNhcmu('6', '1', '/contents_18.do', '_self')"
+                        style="cursor: pointer"
+                        >산후 조리원</a
+                      >
+                    </li>
+                    <!-- 				<li id="menu_6_2"><a onclick="goNhcmu('6', '2', '/contents_19.do', '_self')" style="cursor:pointer;">베이비시터</a></li>
+				<li id="menu_6_3"><a onclick="goNhcmu('6', '3', '/contents_20.do', '_self')" style="cursor:pointer;">키즈 카페</a></li> -->
+                    <li id="menu_6_4">
+                      <a
+                        onclick="goNhcmu('6', '4', '/contents_21.do', '_self')"
+                        style="cursor: pointer"
+                        >출산육아용품몰</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    onclick="goNhcmu('7', '1', '/contents_22.do', '_self')"
+                    style="cursor: pointer"
+                    >뷰티</a
+                  >
+                  <ul class="li07">
+                    <li id="menu_7_1">
+                      <a
+                        onclick="goNhcmu('7', '1', '/contents_22.do', '_self')"
+                        style="cursor: pointer"
+                        >두피 관리샵</a
+                      >
+                    </li>
+                    <!-- <li id="menu_7_2"><a onclick="goNhcmu('7', '2', '/contents_23.do', '_self')" style="cursor:pointer;">네일숍</a></li> -->
+                  </ul>
+                  <a
+                    onclick="goNhcmu('8', '1', '/contents_24.do', '_self')"
+                    style="cursor: pointer"
+                    >펫</a
+                  >
+                  <ul class="li08">
+                    <li id="menu_8_1">
+                      <a
+                        onclick="goNhcmu('8', '1', '/contents_24.do', '_self')"
+                        style="cursor: pointer"
+                        >펫 쇼핑몰</a
+                      >
+                    </li>
+                    <li id="menu_8_2">
+                      <a
+                        onclick="goNhcmu('8', '2', '/contents_25.do', '_self')"
+                        style="cursor: pointer"
+                        >동물병원</a
+                      >
+                    </li>
+                    <li id="menu_8_3">
+                      <a
+                        onclick="goNhcmu('8', '3', '/contents_26.do', '_self')"
+                        style="cursor: pointer"
+                        >카페·펜션·호텔</a
+                      >
+                    </li>
+                    <li id="menu_8_4">
+                      <a
+                        onclick="goNhcmu('8', '4', '/contents_27.do', '_self')"
+                        style="cursor: pointer"
+                        >교육·미용·서비스</a
+                      >
+                    </li>
+                    <li id="menu_8_5">
+                      <a
+                        onclick="goNhcmu('8', '5', '/contents_28.do', '_self')"
+                        style="cursor: pointer"
+                        >식품·용품</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    onclick="goNhcmu('9', '1', '/contents_29.do', '_self')"
+                    style="cursor: pointer"
+                    >라이프</a
+                  >
+                  <ul class="li09">
+                    <li id="menu_9_1">
+                      <a
+                        onclick="goNhcmu('9', '1', '/contents_29.do', '_self')"
+                        style="cursor: pointer"
+                        >심리상담</a
+                      >
+                    </li>
+                    <li id="menu_9_2">
+                      <a
+                        onclick="goNhcmu('9', '2', '/contents_30.do', '_self')"
+                        style="cursor: pointer"
+                        >자동차보험</a
+                      >
+                    </li>
+                    <!-- <li id="menu_9_3"><a onclick="goNhcmu('9', '3', '/contents_31.do', '_self')" style="cursor:pointer;">정기배송</a></li> -->
+                    <li id="menu_9_4">
+                      <a
+                        onclick="goNhcmu('9', '4', '/contents_32.do', '_self')"
+                        style="cursor: pointer"
+                        >상조</a
+                      >
+                    </li>
+                  </ul>
+                  <!-- 
+			<a onclick="goNhcmu('10', '1', '/contents_33.do', '_self')" style="cursor:pointer;">티켓/쿠폰</a>
+			<ul class="li10">
+				<li id="menu_10_1"><a onclick="goNhcmu('10', '1', '/contents_33.do', '_self')" style="cursor:pointer;">공연 티켓</a></li>
+				<li id="menu_10_2"><a onclick="goNhcmu('10', '5', '/contents_42.do', '_self')" style="cursor:pointer;">영화 티켓</a></li>
+			</ul>
+ -->
+                </li>
+              </ul>
+              <div class="sub_menu">
+                <ul class="clearfix">
+                  <li id="menu_12_1">
+                    <a
+                      onclick="goNhcmulist('12', '1', '/event/list.do', '_self', '4','401', '')"
+                      style="cursor: pointer"
+                      >이벤트</a
+                    >
+                  </li>
+                  <li id="menu_11_1">
+                    <a
+                      onclick="goNhcmu('11', '1', '/usage_guide.do', '_self')"
+                      style="cursor: pointer"
+                      >이용가이드</a
+                    >
+                  </li>
+                  <li id="menu_11_3">
+                    <a
+                      onclick="goNhcmulist('11', '3', '/board/list.do', '_self', '1','101', '')"
+                      style="cursor: pointer"
+                      >고객센터</a
+                    >
+                  </li>
+                  <li id="menu_13_1">
+                    <a
+                      onclick="goNhcmu('13', '1', 'http://www.nhcardsoho.com/index.do', '_blank')"
+                      style="cursor: pointer"
+                      >개인사업자특별서비스</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <button class="menu_all_close">전체메뉴 닫기</button>
+          </div>
+        </div>
+      </header>
+      <link rel="stylesheet" href="/css/event.css?200803" />
+      <link rel="stylesheet" href="/css/popup_tb.css" />
+
+      <!-- 날짜 포멧 변경 -->
+
+      <!-- 이벤트 날짜 -->
+
+      <script type="text/javascript" src="/js/rsa/jsbn.js"></script>
+      <script type="text/javascript" src="/js/rsa/rsa.js"></script>
+      <script type="text/javascript" src="/js/rsa/prng4.js"></script>
+      <script type="text/javascript" src="/js/rsa/rng.js"></script>
+
+      <script type="text/javascript">
+        jQuery.fn.center = function () {
+          this.css("position", "absolute");
+          this.css(
+            "top",
+            Math.max(
+              0,
+              ($(window).height() - $(this).outerHeight()) / 2 +
+                $(window).scrollTop()
+            ) + "px"
+          );
+          this.css(
+            "left",
+            Math.max(
+              0,
+              ($(window).width() - $(this).outerWidth()) / 2 +
+                $(window).scrollLeft()
+            ) + "px"
+          );
+          return this;
+        };
+
+        //	종료 시간 카운트
+        var endtimer = setInterval(dayGap, 1000);
+
+        function dayGap() {
+          var dday = new Date("2021-07-20T23:59:59+09:00"); //	종료 날짜
+          //var dday = new Date("2020-04-14T18:07:00+09:00");
+
+          var nowday = new Date(); //	현재 날짜
+          var tzn =
+            nowday.getTime() + nowday.getTimezoneOffset() * 60000 + 9 * 3600000;
+          nowday.setTime(tzn);
+          nowday = nowday.getTime(); //	밀리세컨드 단위변환
+
+          var distance = dday - nowday; //	종료 날짜에서 현재 날짜 뺌
+
+          var end_day = Math.floor(distance / (1000 * 60 * 60 * 24)); //	날짜
+          var end_hour = Math.floor((distance / (1000 * 60 * 60)) % 24); //	시간
+          var end_min = Math.floor((distance / (1000 * 60)) % 60); //	분
+          var end_sec = Math.floor((distance / 1000) % 60); //	초
+
+          if (end_hour < 10) {
+            end_hour = "0" + end_hour;
+          }
+
+          if (end_min < 10) {
+            end_min = "0" + end_min;
+          }
+
+          if (end_sec < 10) {
+            end_sec = "0" + end_sec;
+          }
+
+          if (distance <= 0) {
+            //	종료 날짜 됐을 시 이벤트
+            $("#endTimetap").hide();
+            $("#endTimeEvent").show();
+
+            if ($(".hot_btn_02").hasClass("eventBtn")) {
+              $(".eventBtn").remove();
+              $(".hot_btn_02").append(
+                '<a onclick="alert(\'응모 시간이 아닙니다.\')" class="eventBtn">참여하기</a>'
+              );
+            }
+          } else {
+            if (document.getElementById("end_day")) {
+              document.getElementById("end_day").innerHTML = end_day;
+            }
+
+            if (document.getElementById("end_hour")) {
+              document.getElementById("end_hour").innerHTML = end_hour;
+            }
+
+            if (document.getElementById("end_min")) {
+              document.getElementById("end_min").innerHTML = end_min;
+            }
+
+            if (document.getElementById("end_sec")) {
+              document.getElementById("end_sec").innerHTML = end_sec;
+            }
+          }
+        }
+
+        //	참여내역 팝업
+        function inquiriesPopup() {
+          $(".winningForm").show();
+          $(".pop_jjindeal").css("transform", "none");
+          $(".pop_jjindeal").center();
+        }
+
+        //	참여 내역 보기 닫기
+        function inquiriesClose() {
+          $("ul.event_list").empty();
+          $(".my_event").hide();
+          $(".winningForm").hide();
+          $(".my_event").hide();
+          $(".data_info").hide();
+        }
+
+        //	참여 내역 보기
+        var info_status = "Y";
+
+        function inquiriesEvent() {
+          if (info_status == "Y") {
+            if ($("#winname").val() == "") {
+              alert("이름도 입력해주세요.");
+              $("#winname").focus();
+              return;
+            }
+
+            if ($("#winhphone").val() == "") {
+              alert("연락처도 입력해주세요.");
+              $("#winhphone").focus();
+              return;
+            }
+
+            if ($("#winhphone").val().length < 9) {
+              alert("휴대폰 번호를 정확히 입력해주세요.");
+              $("#winhphone").focus();
+              return;
+            }
+
+            if (!$.isNumeric($("#winhphone").val())) {
+              alert("휴대폰 입력 시 숫자만 입력해주세요.");
+              $("#winhphone").focus();
+              return;
+            }
+
+            var regExp = /^01[016789]\d{7,8}$/g;
+
+            if (!regExp.test($("#winhphone").val())) {
+              alert("휴대폰 번호를 정확히 입력해주세요.");
+              $("#winhphone").focus();
+              return;
+            }
+
+            info_status = "N";
+
+            $.ajax({
+              type: "GET",
+              url: "/sponsor_key.do",
+              dataType: "JSON", // 옵션이므로 JSON으로 받을게 아니면 안써도 됨
+              success: function (data) {
+                $.post(
+                  "/jjindealEntryInfo.do",
+                  {
+                    pri_data: get_rea_data(
+                      data.publicKeyModulus,
+                      data.publicKeyExponent,
+                      winningfrm
+                    ),
+                    idx: "",
+                  },
+                  function (msg) {
+                    var result = $.trim(msg);
+                    var careerArray = msg.getlist;
+                    var boardlist = "";
+
+                    if (
+                      result != null &&
+                      result != "null" &&
+                      result != "" &&
+                      result != "[]"
+                    ) {
+                      var nowday = new Date(); //	현재 날짜
+                      var tzn =
+                        nowday.getTime() +
+                        nowday.getTimezoneOffset() * 60000 +
+                        9 * 3600000;
+                      nowday.setTime(tzn);
+                      nowday = nowday.getTime(); //	밀리세컨드 단위변환
+
+                      for (var i = 0; i < careerArray.length; i++) {
+                        var binggoday = new Date(
+                          careerArray[i].ANNOUNCE_DATE_F +
+                            "T" +
+                            careerArray[i].ANNOUNCE_TIME_F +
+                            "+09:00"
+                        );
+                        var binggocheck = binggoday - nowday;
+
+                        var endday = new Date(
+                          careerArray[i].END_ANNOUNCE_DATE_F + "T23:00:00+09:00"
+                        );
+                        var endCheck = endday - nowday;
+
+                        boardlist += "	<li>";
+                        boardlist += '		<dl class="event_item event_w">';
+                        boardlist += "			<dt>";
+                        boardlist +=
+                          '				<span class="name">' +
+                          careerArray[i].TITLE +
+                          "</span>";
+                        boardlist += "			</dt>";
+                        boardlist += "			<dd>";
+
+                        if (binggocheck <= 0) {
+                          if (careerArray[i].BINGGOTYPE == "1") {
+                            if (careerArray[i].BINGGO_SEQ_VAL > 1) {
+                              boardlist +=
+                                '			<span class="event_win yes"><em>당첨</em><a onclick="alert(\'추가 당첨자 고객님은 응모하신\\n휴대폰 번호로 보내드린 문자를 확인하시어\\n해당 링크로 접속 후 결제 부탁드립니다.\\n감사합니다^^\')" style="cursor:pointer;" class="payment">[결제하기]</a></span>';
+                            } else {
+                              if (endCheck <= 0) {
+                                boardlist +=
+                                  '		<span class="event_win yes"><em>당첨</em><a onclick="alert(\'결제 기간이 종료되었습니다. 감사합니다.\')" style="cursor:pointer;" class="payment">[결제하기]</a></span>';
+                              } else {
+                                boardlist +=
+                                  '		<span class="event_win yes"><em>당첨</em><a href="' +
+                                  careerArray[i].GUIDE_URL +
+                                  '" target="_blank" class="payment">[결제하기]</a></span>';
+                              }
+                            }
+                          } else {
+                            boardlist +=
+                              '		<span class="event_win lose"><em>미당첨</em></span>';
+                          }
+                        } else {
+                          boardlist +=
+                            '			<span class="event_win no"><em>당첨자 선정 전</em></span>';
+                        }
+
+                        boardlist += "			</dd>";
+
+                        boardlist += "		</dl>";
+                        boardlist += "	</li>";
+                      }
+
+                      $("ul.event_list").empty();
+                      $("ul.event_list").append(boardlist);
+
+                      $(".my_event").show();
+                      info_status = "Y";
+
+                      $(".pop_jjindeal").css("transform", "none");
+                      $(".pop_jjindeal").center();
+                    } else {
+                      alert(
+                        "입력하신 이름, 연락처와 일치하는 내역이 없습니다."
+                      );
+                      return;
+                    }
+                  }
+                );
+              },
+              complete: function (data) {
+                info_status = "Y";
+                // 통신이 실패했어도 완료가 되었을 때 이 함수를 타게 된다.
+                // TODO
+              },
+              error: function (xhr, status, error) {
+                alert("서버오류입니다. 잠시후에 다시 부탁드립니다.");
+                info_status = "Y";
+              },
+            });
+          }
+        }
+
+        //	찐딜 응모 팝업
+        function joinPopup() {
+          $(".insert_popup").show();
+          $(".popup_nh_wrap").css("margin", "0");
+          $(".popup_nh_wrap").center();
+        }
+
+        //	찐딜 응모 정보 입력
+        var check_status = "Y";
+
+        function joinEvent() {
+          if (check_status == "Y") {
+            if ($("#name").val() == "") {
+              alert("이름도 입력해주세요.");
+              $("#name").focus();
+              return;
+            }
+
+            if ($.trim($("#name").val()).length < 2) {
+              alert("이름을 정확하게 입력해주세요.");
+              $("#name").focus();
+              return;
+            }
+
+            if ($("#hphone_num_2").val() == "") {
+              alert("연락처도 입력해주세요.");
+              $("#hphone").focus();
+              return;
+            }
+
+            var hphoneVal = $("#hphone_num_1").val() + $("#hphone_num_2").val();
+
+            if (hphoneVal.length < 9) {
+              alert("휴대폰 번호를 정확히 입력해주세요.");
+              $("#hphone").focus();
+              return;
+            }
+
+            if (!$.isNumeric(hphoneVal)) {
+              alert("휴대폰 입력 시 숫자만 입력해주세요.");
+              $("#hphone").focus();
+              return;
+            }
+
+            var regExp = /^01[016789]\d{7,8}$/g;
+
+            if (!regExp.test(hphoneVal)) {
+              alert("휴대폰 번호를 정확히 입력해주세요.");
+              $("#hphone").focus();
+              return;
+            }
+
+            if (!$("#chk_yes").is(":checked")) {
+              alert(
+                "개인정보 활용에 동의 해주셔야 이벤트를 참여하실 수 있습니다."
+              );
+              $("#chk_yes").focus();
+              return;
+            }
+
+            check_status = "N";
+            $("#hphone").val(hphoneVal);
+
+            $.ajax({
+              type: "GET",
+              url: "/sponsor_key.do",
+              dataType: "JSON", // 옵션이므로 JSON으로 받을게 아니면 안써도 됨
+              success: function (data) {
+                $.post(
+                  "/addJjindealEventJoin.do",
+                  {
+                    pri_data: get_rea_data(
+                      data.publicKeyModulus,
+                      data.publicKeyExponent,
+                      frm
+                    ),
+                  },
+                  function (msg) {
+                    var result = $.trim(msg.result);
+
+                    if (result != null && result != "null" && result != "") {
+                      if (result == "0") {
+                        $(".insert_popup").hide();
+                        alert("응모하셨습니다.\n내일 또 참여해주세요!");
+                        check_status = "Y";
+                        return false;
+                      } else if (result == "1") {
+                        alert("이벤트 기간이 아닙니다.");
+                        $(".insert_popup").hide();
+                        check_status = "Y";
+                        return false;
+                      } else if (result == "2") {
+                        alert(
+                          "하루 1회까지 응모 하실수 있습니다.\n내일 다시 응모해주세요."
+                        );
+                        $(".insert_popup").hide();
+                        return false;
+                      } else {
+                        alert(
+                          "응모에 실패하였습니다.다음에 다시 응모해주세요."
+                        );
+                        $(".insert_popup").hide();
+                        check_status = "Y";
+                        return false;
+                      }
+                    } else {
+                      alert("응모에 실패하였습니다.다음에 다시 응모해주세요.");
+                      $(".insert_popup").hide();
+                      check_status = "Y";
+                      return false;
+                    }
+                  }
+                );
+              },
+              complete: function (data) {
+                check_status = "Y";
+                // 통신이 실패했어도 완료가 되었을 때 이 함수를 타게 된다.
+                // TODO
+              },
+              error: function (xhr, status, error) {
+                check_status = "Y";
+                alert("서버오류입니다. 잠시후에 다시 부탁드립니다.");
+              },
+            });
+          }
+        }
+
+        function isNumber(obj) {
+          $(obj).keyup(function () {
+            $(this).val(
+              $(this)
+                .val()
+                .replace(/[^0-9]/g, "")
+            );
+          });
+        }
+      </script>
+       <script>
+        $('.owl-carousel').owlCarousel({
+              loop:true,
+              margin:10,
+              nav:true,
+              responsive:{
+                 
+                  600:{
+                      items:1
+                  },
+                  1000:{
+                      items:5
+                  }
+              }
+          })
+    </script>
+
+      <div id="content">
+        <div class="layout_wrap">
+          <div class="event_view_con">
+            <div class="t-center">
+              <p><img src="/img/event/m-event-01.jpg" alt="" /></p>
+              <p><img src="/img/event/m-event-02.jpg" alt="" /></p>
+              <div class="dt_dealArea">
+                <div class="dt_deal">
+                  <h2 class="timedel">응모종료</h2>
+                  <div class="timeline" id="endTimetap">
+                    <div class="d_day">
+                      <span>D</span> -
+                      <span id="end_day" style="padding-right: 4px"></span>
+                    </div>
+                    <span id="end_hour"></span> : <span id="end_min"></span> :
+                    <span id="end_sec"></span>
+                  </div>
+                  <div class="timeline" id="endTimeEvent" style="display: none">
+                    응모기간이 종료되었습니다.
+                  </div>
+                </div>
+              </div>
+              <script>
+                dayGap();
+              </script>
+              <ul class="crl_list">
+                <li class="hot_btn_01">
+                  <a onclick="inquiriesPopup()" style="cursor: pointer"
+                    >당첨내역보기</a
+                  >
+                </li>
+
+                <li class="hot_btn_02">
+                  <a
+                    onclick="joinPopup()"
+                    style="cursor: pointer"
+                    class="eventBtn"
+                    >참여하기</a
+                  >
+                </li>
+              </ul>
+              <!-- event-week : s -->
+            
+              <div class="event-week">
+                <div class="event-week-inner owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="day mon"></div>
+                        <div class="img-wrap">
+                            <img src="/img/event/product-img-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item event-on">
+                        <div class="day tue"></div>
+                        <div class="img-wrap">
+                            <img src="/img/event/product-img-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item event-win">
+                        <div class="day wed"></div>
+                        <div class="img-wrap">
+                            <img src="#" alt="">
+                        </div>
+                        <div class="text">
+                            <span>당첨자 수</span>
+                            <span class="person"><strong>1</strong>명</span>
+                        </div>
+                    </div>
+                    <div class="item event-low">
+                        <div class="day thu"></div>
+                        <div class="img-wrap">
+                            <img src="/img/event/q-mark.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item event-low">
+                        <div class="day fri"></div>
+                        <div class="img-wrap">
+                            <img src="/img/event/q-mark.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item event-low">
+                        <div class="day sat"></div>
+                        <div class="img-wrap">
+                            <img src="/img/event/q-mark.png" alt="">
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- event-week : e -->
+              <p class="event-info">
+                <img
+                  src="/img/event/event-1-info@3x.png"
+                  alt=""
+                />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 당첨내역보기 시작 -->
+
+      <div class="maskjjindeal winningForm" style="display: none"></div>
+      <div class="pop_jjindeal winningForm" style="display: none">
+        <div class="jjinList_inbox">
+          <div class="popup_contents">
+            <h1 class="title">찐딜 당첨 내역 조회</h1>
+            <div class="popup_tbl_demo_wrap">
+              <form name="winningfrm" method="post">
+                <div class="inputBox_Wrap">
+                  <div class="numInput_box">
+                    <span class="txtInput_ln">
+                      <input
+                        type="text"
+                        name="winname"
+                        id="winname"
+                        maxlength="13"
+                        placeholder="이름"
+                        value=""
+                      />
+                    </span>
+                  </div>
+                  <div class="numInput_box">
+                    <span class="txtInput_ln">
+                      <input
+                        type="text"
+                        name="winhphone"
+                        id="winhphone"
+                        onkeydown="isNumber(this)"
+                        maxlength="11"
+                        placeholder="휴대폰번호"
+                        value=""
+                      />
+                    </span>
+                  </div>
+                </div>
+              </form>
+              <div class="btn_group2">
+                <ul class="btn_area">
+                  <li>
+                    <button
+                      class="btn_default btn_type2"
+                      onclick="inquiriesClose()"
+                    >
+                      취소
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="btn_default btn_type"
+                      onclick="inquiriesEvent()"
+                    >
+                      조회
+                    </button>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="data_info" style="display: none">
+                ※ 입력하신 이름, 연락처와 일치하는 내역이 없습니다.
+              </div>
+
+              <div class="my_event" style="display: none">
+                <p class="group_title">이벤트 당첨내역</p>
+                <ul class="event_list"></ul>
+                <p class="my_event_notice">
+                  ※ 이벤트 응모 내역은 3개월 후 자동 삭제됩니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 당첨내역보기 끝 -->
+
+      <!-- 응모내역 등록하기 시작 -->
+      <div class="microMask insert_popup" style="display: none"></div>
+      <div class="popup_nh_wrap insert_popup" style="display: none">
+        <div class="inbox" style="border: 2px solid #333">
+          <div class="popup_top" style="text-align: center; width: 100%">
+            <h1 class="title">
+              NH농협카드 채움스케치 찐딜 이벤트<br /><span
+                >＊ 참여를 위해 아래 항목을 입력해 주세요.</span
+              >
+            </h1>
+          </div>
+          <!-- popup_contents -->
+          <div class="popup_contents">
+            <form name="frm" method="post">
+              <input type="hidden" name="jjinType" value="47" />
+              <div class="popup_tbl_demo_wrap">
+                <h2>이름</h2>
+                <div class="numInput_wrap">
+                  <span class="txtInput">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      maxlength="13"
+                      value=""
+                    />
+                  </span>
+                </div>
+                <h2 style="margin-top: 10px">핸드폰 번호</h2>
+                <div class="numInput_wrap">
+                  <div class="telBox">
+                    <select name="hphone_num" id="hphone_num_1" class="tel">
+                      <option value="010">010</option>
+                      <option value="011">011</option>
+                      <option value="016">016</option>
+                      <option value="017">017</option>
+                      <option value="018">018</option>
+                      <option value="019">019</option>
+                    </select>
+                  </div>
+                  <div class="telnumBox">
+                    <input
+                      type="text"
+                      name="hphone_num_2"
+                      id="hphone_num_2"
+                      onkeydown="isNumber(this)"
+                      maxlength="8"
+                      value=""
+                      class="telnum"
+                      placeholder="[-] 없이 입력 (예:12345678)"
+                    />
+                  </div>
+                  <input type="hidden" name="hphone" id="hphone" value="" />
+                </div>
+                <p style="padding-top: 7px; font-size: 12px">
+                  ※ 잘못 등록된 개인정보로 인해 경품배송이 누락될 경우 당사는
+                  책임지지 않습니다. 주의해서 입력해 주시기 바랍니다.
+                </p>
+                <div class="agree_wrap" style="width: 100%">
+                  <p class="intit">개인정보수집동의</p>
+                  <div class="agree_box">
+                    <ul>
+                      <li>
+                        <strong>1. 수집·이용에 관한 사항</strong><br />
+                        - 수집 받는 자 : (주)이소프팅<br />
+                        - 수집·이용목적 : 이벤트의 신청, 당첨자의 선정, 경품
+                        지급 등 이벤트 진행<br />
+                        - 수집·이용할 항목: 휴대전화번호, 성명, 이메일,
+                        배송지<br />
+                        - 인터넷 서비스 이용과정에서 아래의 개인정보 항목이
+                        자동으로 생성되어 수집 될 수 있습니다.<br />
+                        - 자동 수집·이용할 항목: IP주소, 쿠키<br />
+                        - 보유·이용기간: 동의일로부터 경품수령 확인 또는 제공
+                        경품 유효기간 만료후 3개월이내 또는 동의 철회일까지
+                        보유·이용되며, 수집 및 이용 목적이 달성된 후에는 해당
+                        정보를 파기합니다.<br />
+                      </li>
+                      <li>
+                        <strong>2. 제공에 관한 사항</strong><br />
+                        - 제공 받는 자 : ㈜마트스마트<br />
+                        - 제공받는 자의 이용 목적 : 경품 발송 <br />
+                        - 제공할 개인정보의 항목 : 휴대전화번호, 성명<br />
+                        - 보유·이용 기간 : 계약 또는 청약철회 등에 관한 기록 :
+                        5년<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        대금결제 및 재화 등의 공급에 관한 기록 : 5년<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        소비자의 불만 또는 분쟁처리에 관한 기록 : 3년<br />
+                      </li>
+                      <li>
+                        - 동의를 거부할 권리 및 동의를 거부할 경우의 불이익 :위
+                        개인정보의 수집&amp;이용에 대한 동의를 거부할 수 있으며,
+                        동의 후에도 언제든지 철회 가능합니다. 다만, 동의하지
+                        않은 경우 이벤트 관련 서비스를 제공받을 수 없습니다.<br />
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="chk_box">
+                    <input type="checkbox" id="chk_yes" />
+                    <label style="padding-right: 10px" for="chk_yes"
+                      >개인정보 활용에 동의합니다.</label
+                    >
+                  </div>
+                </div>
+                <div class="btn_group">
+                  <a onclick="joinEvent()" style="cursor: pointer"
+                    ><button
+                      type="button"
+                      class="btn_default_line btn_default_orange"
+                    >
+                      <span style="font-size: 13px">확인</span>
+                    </button></a
+                  >
+                  <span class="btn_cell"></span>
+                  <a
+                    onclick="$('.microMask').hide();$('.insert_popup').hide();"
+                    style="cursor: pointer"
+                    ><button type="button" class="btn_default_line">
+                      <span style="font-size: 13px">취소</span>
+                    </button></a
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- // popup_contents -->
+        </div>
+      </div>
+
+      <!-- 응모내역 등록하기 끝 -->
+
+      <input type="hidden" id="menuNum" value="12" />
+      <input type="hidden" id="smenuNum" value="7" />
+
+      <form name="logging_script" method="post">
+        <input type="hidden" name="pageNum" value="" />
+        <input type="hidden" name="subNum" value="" />
+        <input type="hidden" name="iframeUrl" value="" />
+        <input type="hidden" name="selNum" value="" />
+      </form>
+      <form name="logging_list_script" method="post">
+        <input type="hidden" name="pageNum" value="" />
+        <input type="hidden" name="subNum" value="" />
+        <input type="hidden" name="BGIDX" value="" />
+        <input type="hidden" name="BDIDX" value="" />
+        <input type="hidden" name="BRIDX" value="" />
+      </form>
+      <form name="paramForm">
+        <input type="hidden" name="cheum" value="" />
+        <input type="hidden" name="code" value="" />
+        <input type="hidden" name="codeuid" value="" />
+      </form>
+      <form name="funnyForm" method="post">
+        <input type="hidden" name="cheum" id="cheum" />
+      </form>
+      <iframe
+        name="loggin_iframe"
+        id="loggin_iframe"
+        style="width: 0px; height: 0px"
+        frameborder="0"
+      >
+      </iframe>
+
+      <footer id="footer">
+        <div class="ft_top">
+          <div class="layout_wrap">
+            <div class="company_name">(주)이소프팅</div>
+            <ul class="ft_policy clearfix">
+              <li class="li01">
+                <a
+                  onclick="goNhcmu('11', '1', '/individual.do', '_self')"
+                  style="cursor: pointer"
+                  >개인정보처리방침</a
+                >
+              </li>
+              <li class="li02">
+                <a
+                  onclick="goNhcmu('11', '6', '/use_agreement.do', '_self')"
+                  style="cursor: pointer"
+                  >이용약관</a
+                >
+              </li>
+            </ul>
+            <div class="clearfix">
+              <div class="ft_t_l ft_info">
+                <address>
+                  서울시 구로구 디지털로 33길 27 (구로동, 삼성IT밸리 6층)
+                </address>
+                <span>사업자 등록번호 : 220-81-78061</span>
+                <p>Copyright 2019. Esofting inc. all rights reserved.</p>
+              </div>
+              <div class="ft_t_r cs_num">
+                <span>카드 문의 <strong>1644-4000</strong></span>
+                <span>채움스케치 문의 <strong>1688-6182</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ft_bottom">
+          <div class="layout_wrap">
+            <p>
+              NH농협카드 채움스케치의 서비스는
+              <strong>각 서비스별 제휴가맹점의 책임하에 운영</strong>되고
+              있습니다.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript">
+      log("12", "7");
+    </script>
+  </body>
+</html>

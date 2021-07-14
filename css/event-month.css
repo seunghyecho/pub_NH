@@ -1,0 +1,279 @@
+@charset "UTF-8";
+/* 202107 수정 :s */
+
+/*이벤트*/
+/*진행중 이벤트 리스트*/
+.evnet_list_con {
+  margin-top: 60px;
+}
+.evnet_list_con ul li {
+  border: 1px solid #e2e2e2;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+}
+.evnet_list_con ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.evnet_list_con ul li figure {
+  display: inline-block;
+  float: left;
+}
+
+.evnet_list_con ul li figure figcaption {
+  padding-left: 30px;
+  display: inline-block;
+}
+.evnet_list_con ul li div {
+  display: inline-block;
+  padding-left: 50px;
+  margin-top: 5px;
+}
+.evnet_list_con ul li div span {
+  background: #fd8e01;
+  color: #fff;
+  width: 60px;
+  display: block;
+  text-align: center;
+  line-height: 25px;
+}
+.evnet_list_con ul li div h3 {
+  color: #181818;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 8px 0 11px;
+}
+.evnet_list_con ul li div p {
+  color: #7f7f7f;
+  font-size: 14px;
+}
+/*진행중이벤트 뷰페이지*/
+.event_view_con {
+  text-align: center;
+  padding: 0;
+}
+.event_view_con img {
+  margin: 0;
+  max-width: 100%;
+}
+.event-week {
+  margin: 50px 0;
+}
+.event-week-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.event-week-inner img {
+  max-width: 100%;
+}
+.event-week-inner > * {
+  position: relative;
+  width: auto;
+  height: 300px;
+}
+.event-week-inner .day {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #000000;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+.event-week-inner .day.mon::before {
+  content: "월";
+}
+.event-week-inner .day.tue::before {
+  content: "화";
+}
+.event-week-inner .day.wed::before {
+  content: "수";
+}
+.event-week-inner .day.thu::before {
+  content: "목";
+}
+.event-week-inner .day.fri::before {
+  content: "금";
+}
+.event-week-inner .day.sat::before {
+  content: "토";
+}
+.event-week-inner .event-on .day {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: #f55217;
+}
+.event-week-inner .event-on .img-wrap {
+  width: 300px;
+  height: 300px;
+  box-shadow: 0px 10px 20px 0 rgba(245, 82, 23, 0.4);
+  border: solid 5px #f55217;
+  border-radius: 50%;
+  background-color: transparent;
+  overflow: hidden;
+}
+.event-week-inner .event-win {
+  width: 122px;
+  box-shadow: 0px 4px 10px 0 rgb(0 0 0 / 5%);
+}
+.event-week-inner .event-win .img-wrap {
+  background-color: #fff;
+}
+.event-week-inner .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.event-week-inner .text span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #969696;
+}
+.event-week-inner .text span.person {
+  font-size: 26px;
+  color: #3c3c3c;
+}
+.event-week-inner .text span.person strong {
+  font-size: 46px;
+}
+.event-week-inner .event-low {
+  width: 122px;
+  box-shadow: 0px 4px 10px 0 rgb(0 0 0 / 5%);
+}
+.event-week-inner .event-low .img-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.t-center {
+  text-align: center;
+}
+
+/*버튼*/
+.crl_list {
+  overflow: hidden;
+}
+.crl_list .hot_btn_01,
+.crl_list .hot_btn_02 {
+  float: left;
+  width: 50%;
+}
+.crl_list .hot_btn_01 a,
+.crl_list .hot_btn_02 a {
+  display: block;
+  padding: 18px 0;
+  color: #fff;
+  font-size: 30px;
+}
+.crl_list .hot_btn_01 a {
+  background-color: #e6e6e6;
+  color: #787878;
+  border: 2px solid #e6e6e6;
+}
+.crl_list .hot_btn_02 a {
+  background-color: #f55217;
+  border: 2px solid #f55217;
+}
+
+/*시간*/
+.timeline {
+  margin-right: 6px;
+  display: flex;
+  font-size: 24px;
+  color: #3c3c3c;
+}
+.timeline .d_day {
+  margin-right: 31px;
+  font-weight: 600;
+  color: #f55217;
+}
+.timeline span#end_hour,
+.timeline span#end_min,
+.timeline span#end_sec {
+  margin: 0 6px;
+}
+.dt_dealArea {
+  padding: 0;
+  margin: 20px 0 0;
+  background-color: #f0f0f0;
+}
+.dt_deal {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+}
+.timedel {
+  margin-right: 31px;
+  display: flex;
+  align-items: center;
+  color: #3c3c3c;
+  font-size: 24px;
+}
+.timedel:before {
+  background: url(/img/event/event-2-clockicon@3x.png) no-repeat;
+  background-size: 26px 26px;
+  width: 26px;
+  height: 26px;
+  margin-right: 9px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* popup : s */
+.btn_area li {
+  float: left;
+  width: 25%;
+}
+.btn_area li:first-child {
+  padding-left: 0;
+}
+.btn_area li:last-child {
+  width: 75%;
+  padding-left: 5px;
+}
+.btn_area button {
+  width: 100%;
+  font-weight: normal;
+  height: 50px;
+}
+.btn_area .btn_type {
+  background: #f55217;
+  border-color: #f55217;
+  color: #fff;
+}
+
+.popup_top {
+  position: relative;
+  padding: 0 20px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #f55217 !important;
+}
+.btn_default_line.btn_default_orange {
+  background: #f55217;
+}
+/* popup : e */
+@media screen and (min-width: 768px) {
+  .layout_wrap {
+    position: relative;
+    width: 100% !important;
+    margin: 0 auto;
+  }
+}
+
+/* 202107 수정 :e */

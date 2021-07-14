@@ -642,8 +642,114 @@ background: url(/img/sub/sub_select02.jpg) no-repeat 95% 50%;  text-indent: 5px;
 .evnet_list_con ul li div h3{color: #181818;font-size: 20px;font-weight: 500;padding: 8px 0 11px;}
 .evnet_list_con ul li div p{color: #7f7f7f;font-size: 14px;}
 /*진행중이벤트 뷰페이지*/
-.evnet_view_con{border-bottom: 1px solid #ddd; text-align:center; padding:50px 0 ;}
-.evnet_view_con img{margin: 0 auto;}
+/* 202107 수정 :s */
+.event_view_con{
+    text-align:center; 
+    padding:0 ;
+}
+.event_view_con img{
+    margin:0;
+}
+/* 202107 수정 :e */
+.event-week{
+    margin: 50px 0;
+}
+.event-week-inner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.event-week-inner img{
+    max-width: 100%;
+}
+.event-week-inner > *{
+    position: relative;
+    width: auto;
+    height: 300px;
+}
+.event-week-inner .day{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.event-week-inner .day.mon::before{
+    content: "월";
+}
+.event-week-inner .day.tue::before{
+    content: "화";
+}
+.event-week-inner .day.wed::before{
+    content: "수";
+}
+.event-week-inner .day.thu::before{
+    content: "목";
+}
+.event-week-inner .day.fri::before{
+    content: "금";
+}
+.event-week-inner .day.sat::before{
+    content: "토";
+}
+.event-week-inner .event-on .day{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: #f55217;
+}
+.event-week-inner .event-on .img-wrap{
+    width: 300px;
+  height: 300px;
+  box-shadow: 0px 10px 20px 0 rgba(245, 82, 23, 0.4);
+  border: solid 5px #f55217;
+  border-radius: 50%;
+  background-color: transparent;
+  overflow: hidden;
+}
+.event-week-inner .event-win{
+    width: 122px;
+    box-shadow: 0px 4px 10px 0 rgb(0 0 0 / 5%);
+}
+.event-week-inner .event-win .img-wrap{
+    background-color: #fff;
+}
+.event-week-inner .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.event-week-inner .text span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #969696;
+}
+.event-week-inner .text span.person{
+    font-size: 26px;
+     color: #3c3c3c;
+}
+.event-week-inner .text span.person strong{
+    font-size: 46px;
+}
+.event-week-inner .event-low{
+    width: 122px;
+    box-shadow: 0px 4px 10px 0 rgb(0 0 0 / 5%);
+}
+.event-week-inner .event-low .img-wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 .evnet_view_btn{ margin: 40px auto; text-align: center;}
 .evnet_view_btn button{  border: 1px solid #4a4a4a; background: #fff url('/img/sub/event_view_icon.png')30px 11px no-repeat; width: 118px;
     color: #4a4a4a; line-height: 34px; text-indent: 10px;}
@@ -922,23 +1028,79 @@ width:150px; height:38px;border-radius: 50px; background-position-x: 27px; text-
 
 /*찐딜*/
 .jjindeal{text-align:center}
+.t-center{
+    text-align:center
+}
 
 /*버튼*/
-.crl_list {padding:50px 0;overflow:hidden;width:660px;margin:0 auto}
+.crl_list {
+    overflow: hidden;
+}
 .crl_list .hot_btn_01, .crl_list .hot_btn_02{float:left;width:50%}
-.crl_list .hot_btn_01 a,.crl_list .hot_btn_02 a{display:block;margin:0 5px 0 0;padding:15px 0;color:#fff;font-size:23px;text-align:center;}
-.crl_list .hot_btn_01 a{background-color:#fff;color:#0e2a7d;border:2px solid #0e2a7d}
-.crl_list .hot_btn_02 a{background-color:#0e2a7d;border:2px solid #0e2a7d}
+.crl_list .hot_btn_01 a,
+.crl_list .hot_btn_02 a{
+    display: block;
+    padding: 18px 0;
+    color: #fff;
+    font-size: 30px;
+}
+.crl_list .hot_btn_01 a{
+    background-color: #e6e6e6;
+    color: #787878;
+    border: 2px solid #e6e6e6;
+}
+.crl_list .hot_btn_02 a{
+    background-color: #f55217;
+    border: 2px solid #f55217;
+}
 
 /*시간*/
-.timeline{margin-right: 6px;color: #333;font-size: 14px;}
-.timeline span{}
-.dt_dealArea{padding:0 55px;margin:50px 0 0 0}
-.dt_deal{ display: flex; height:40px; margin: 0 0 20px;background: #fff;border:1px solid #ccc; border-radius: 30px;color: #999;font-size: 12px;line-height: 20px;
-letter-spacing:-1px;align-items: center;justify-content: center;width:320px;margin:0 auto}
-.timedel{margin-right: 8px;color:#f43142;font-size: 14px;}
-.timedel:before{background:url(/img/event/jjindeal/icon_time.jpg) left 0 no-repeat;background-size:17px 17px;width:17px;height:17px;margin-right:5px;
-content: '';display: inline-block;margin: -1px 2px 1px 0;vertical-align: middle;}
+.timeline{
+    margin-right: 6px;
+    display: flex;
+    font-size: 24px;
+    color: #3c3c3c;
+}
+.timeline .d_day{
+    margin-right: 31px;
+    font-weight: 600;
+    color: #f55217;
+}
+.timeline span#end_hour,
+.timeline span#end_min,
+.timeline span#end_sec{
+    margin: 0 6px;
+}
+/* 202107 수정:s */
+.dt_dealArea{
+    padding: 0;
+    margin: 20px 0 0;
+    background-color: #f0f0f0;
+}
+/* 202107 수정:e */
+.dt_deal{ 
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+.timedel{
+    margin-right: 31px;
+    display: flex;
+    align-items: center;
+    color: #3c3c3c;
+    font-size: 24px;
+}
+.timedel:before{
+    background: url(/img/event/event-2-clockicon@3x.png) no-repeat;
+    background-size: 26px 26px;
+    width: 26px;
+    height: 26px;
+    margin-right: 9px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+}
 
 
 /* popup */
