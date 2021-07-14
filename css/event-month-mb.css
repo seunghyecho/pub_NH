@@ -60,19 +60,59 @@
   width: 100%;
 }
 .event-week {
-  margin: 50px 0;
+  margin: 50px 0 50px 30px;
 }
+
 .event-week-inner {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  position: relative;
+}
+.owl-carousel .owl-stage{
+  display: flex;
+  margin-right: 30px;
+}
+.owl-carousel .owl-stage-outer{
+overflow: visible;
+}
+.owl-nav{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.owl-nav button{
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0,0,0,0.4) !important;
+}
+.owl-nav button span{
+  color: #fff;
+}
+.owl-nav button.owl-prev{
+  left: 0;
+  margin-right: auto;
+  display: block;
+}
+.owl-nav button.owl-next{
+  right: 0;
+  margin-left: auto;
+  margin-right: 30px;
+  display: block;
 }
 .event-week-inner img {
   width: 100%;
 }
-.event-week-inner > * {
+.event-week-inner .owl-item {
   position: relative;
-  width: auto;
+  width: auto !important;
+  height: 300px;
+}
+.event-week-inner .owl-item .item{
+  width: 122px;
   height: 300px;
 }
 .event-week-inner .day {
@@ -113,9 +153,13 @@
   border-radius: 50%;
   background-color: #f55217;
 }
-.event-week-inner .event-on .img-wrap {
+.event-week-inner .owl-item .event-on{
   width: 300px;
   height: 300px;
+}
+.event-week-inner .owl-item .event-on .img-wrap {
+  width: 100%;
+  height: 100%;
   box-shadow: 0px 10px 20px 0 rgba(245, 82, 23, 0.4);
   border: solid 5px #f55217;
   border-radius: 50%;
@@ -178,9 +222,10 @@
 .crl_list .hot_btn_01 a,
 .crl_list .hot_btn_02 a {
   display: block;
-  padding: 18px 0;
+  padding: 53px 0;
   color: #fff;
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: bold;
 }
 .crl_list .hot_btn_01 a {
   background-color: #e6e6e6;
@@ -196,7 +241,7 @@
 .timeline {
   margin-right: 6px;
   display: flex;
-  font-size: 24px;
+  font-size: 40px;
   color: #3c3c3c;
 }
 .timeline .d_day {
@@ -216,7 +261,7 @@
 }
 .dt_deal {
   display: flex;
-  height: 80px;
+  height: 120px;
   align-items: center;
   justify-content: center;
 }
@@ -225,14 +270,14 @@
   display: flex;
   align-items: center;
   color: #3c3c3c;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
 }
 .timedel:before {
   background: url(/img/event/event-2-clockicon@3x.png) no-repeat;
-  background-size: 26px 26px;
-  width: 26px;
-  height: 26px;
+  background-size: 56px 56px;
+  width: 56px;
+  height: 56px;
   margin-right: 9px;
   content: "";
   display: inline-block;
