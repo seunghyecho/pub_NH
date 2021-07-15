@@ -60,7 +60,7 @@
   width: 100%;
 }
 .event-week {
-  margin: 50px 0 50px 30px;
+  margin: 25px 0 25px 10px;
 }
 
 .event-week-inner {
@@ -85,8 +85,8 @@ overflow: visible;
   width: 100%;
 }
 .owl-nav button{
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   background-color: rgba(0,0,0,0.4) !important;
 }
 .owl-nav button span{
@@ -100,7 +100,7 @@ overflow: visible;
 .owl-nav button.owl-next{
   right: 0;
   margin-left: auto;
-  margin-right: 30px;
+  margin-right: 10px;
   display: block;
 }
 .event-week-inner img {
@@ -109,23 +109,23 @@ overflow: visible;
 .event-week-inner .owl-item {
   position: relative;
   width: auto !important;
-  height: 300px;
+  height: 150px;
 }
 .event-week-inner .owl-item .item{
-  width: 122px;
-  height: 300px;
+  width: 61px;
+  height: 150px;
 }
 .event-week-inner .day {
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
   text-align: center;
   background-color: #000000;
   color: #fff;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: bold;
 }
 .event-week-inner .day.mon::before {
@@ -147,15 +147,15 @@ overflow: visible;
   content: "토";
 }
 .event-week-inner .event-on .day {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
   border-radius: 50%;
   background-color: #f55217;
 }
 .event-week-inner .owl-item .event-on{
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
 }
 .event-week-inner .owl-item .event-on .img-wrap {
   width: 100%;
@@ -174,22 +174,23 @@ overflow: visible;
   background-color: #fff;
 }
 .event-week-inner .text {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .event-week-inner .text span {
-  font-size: 14px;
+  font-size: 7px;
   font-weight: 600;
   color: #969696;
 }
 .event-week-inner .text span.person {
-  font-size: 26px;
+  font-size: 13px;
   color: #3c3c3c;
 }
 .event-week-inner .text span.person strong {
-  font-size: 46px;
+  font-size: 23px;
 }
 .event-week-inner .event-low {
   width: 122px;
@@ -222,9 +223,10 @@ overflow: visible;
 .crl_list .hot_btn_01 a,
 .crl_list .hot_btn_02 a {
   display: block;
-  padding: 53px 0;
+  height: 75px;
+  line-height: 75px;
   color: #fff;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: bold;
 }
 .crl_list .hot_btn_01 a {
@@ -239,13 +241,13 @@ overflow: visible;
 
 /*시간*/
 .timeline {
-  margin-right: 6px;
+  margin-right: 3px;
   display: flex;
-  font-size: 40px;
+  font-size: 20px;
   color: #3c3c3c;
 }
 .timeline .d_day {
-  margin-right: 31px;
+  margin-right: 7px;
   font-weight: bold;
   color: #f55217;
 }
@@ -256,29 +258,29 @@ overflow: visible;
 }
 .dt_dealArea {
   padding: 0;
-  margin: 20px 0 0;
+  margin: 10px 0 0;
   background-color: #f0f0f0;
 }
 .dt_deal {
   display: flex;
-  height: 120px;
+  height: 60px;
   align-items: center;
   justify-content: center;
 }
 .timedel {
-  margin-right: 31px;
+  margin-right: 15px;
   display: flex;
   align-items: center;
   color: #3c3c3c;
-  font-size: 30px;
+  font-size: 15px;
   font-weight: bold;
 }
 .timedel:before {
   background: url(/img/event/event-2-clockicon@3x.png) no-repeat;
-  background-size: 56px 56px;
-  width: 56px;
-  height: 56px;
-  margin-right: 9px;
+  background-size: 28px 28px;
+  width: 28px;
+  height: 28px;
+  margin-right: 4px;
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -318,16 +320,6 @@ overflow: visible;
   background: #f55217;
 }
 /* popup : e */
-@media screen and (max-width: 768px) {
-  .layout_wrap {
-    position: relative;
-    width: 100% !important;
-    margin: 0 auto;
-  }
-  .event_view_con{
-       width: 100% !important;
-  }
-  
-}
+
 
 /* 202107 수정 :e */
