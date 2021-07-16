@@ -25,6 +25,7 @@
     
     <link rel="stylesheet" href="/lib/animate.css" />
     <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/sub.css" />
     <!-- 작심한달 mobile css 링크 -->
     <link rel="stylesheet" href="/css/event-month-mb.css" />
     <link
@@ -181,7 +182,7 @@
             "left",
             Math.max(
               0,
-              ($(window).width() - $(this).outerWidth()) / 2 +
+              ($(window).width() - $(this).outerWidth()*2) / 2 +
                 $(window).scrollLeft()
             ) + "px"
           );

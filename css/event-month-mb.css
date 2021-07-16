@@ -1,6 +1,32 @@
 @charset "UTF-8";
-/* 202107 수정 :s */
-
+/* --------------------------------- 202107 수정 :s --------------------------------------*/
+/* 모바일 당첨내역보기 팝업 */
+.winningForm {
+  z-index: 99;
+  width: 100%;
+}
+.winningForm .btn_area {
+  margin-top: 10px;
+}
+.winningForm .txtInput_ln {
+  border-bottom: 1px solid #ddd;
+  display: block;
+}
+.winningForm .txtInput_ln input {
+  width: 100%;
+  border: 0;
+  height: 38px;
+  line-height: 38px;
+  font-size: 13px;
+  padding: 0 10px;
+}
+/* 모바일 참여하기 팝업 */
+.popup_nh_wrap {
+  width: 100% !important;
+}
+.popup_nh_wrap .popup_top .title {
+  font-size: 16px;
+}
 /*진행중이벤트 뷰페이지*/
 .event_view_con {
   text-align: center;
@@ -20,14 +46,14 @@
   width: 100%;
   position: relative;
 }
-.owl-carousel .owl-stage{
+.owl-carousel .owl-stage {
   display: flex;
   margin-right: 30px;
 }
-.owl-carousel .owl-stage-outer{
-overflow: visible !important;
+.owl-carousel .owl-stage-outer {
+  overflow: visible !important;
 }
-.owl-nav{
+.owl-nav {
   display: flex;
   align-items: center;
   position: absolute;
@@ -35,20 +61,20 @@ overflow: visible !important;
   transform: translateY(-50%);
   width: 100%;
 }
-.owl-nav button{
+.owl-nav button {
   width: 30px;
   height: 30px;
-  background-color: rgba(0,0,0,0.4) !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
 }
-.owl-nav button span{
+.owl-nav button span {
   color: #fff;
 }
-.owl-nav button.owl-prev{
+.owl-nav button.owl-prev {
   left: 0;
   margin-right: auto;
   display: block;
 }
-.owl-nav button.owl-next{
+.owl-nav button.owl-next {
   right: 0;
   margin-left: auto;
   margin-right: 10px;
@@ -62,7 +88,7 @@ overflow: visible !important;
   width: auto !important;
   height: 300px;
 }
-.event-week-inner .owl-item .item{
+.event-week-inner .owl-item .item {
   width: 61px;
   height: 300px;
 }
@@ -104,7 +130,7 @@ overflow: visible !important;
   border-radius: 50%;
   background-color: #f55217;
 }
-.event-week-inner .owl-item .event-on{
+.event-week-inner .owl-item .event-on {
   width: 300px;
   height: 300px;
 }
@@ -169,11 +195,12 @@ overflow: visible !important;
   width: 50%;
 }
 .crl_list.mb .hot_btn_01,
-  .crl_list.mb .hot_btn_02 {
-    width: 100%;
-  }
+.crl_list.mb .hot_btn_02 {
+  width: 100%;
+}
 .crl_list .hot_btn_01 a,
 .crl_list .hot_btn_02 a {
+  padding: 0;
   display: block;
   height: 75px;
   line-height: 75px;
@@ -238,7 +265,7 @@ overflow: visible !important;
   vertical-align: middle;
 }
 
-/* popup : s */
+/* popup 스타일 : s */
 .btn_area li {
   float: left;
   width: 25%;
@@ -271,7 +298,6 @@ overflow: visible !important;
 .btn_default_line.btn_default_orange {
   background: #f55217;
 }
-/* popup : e */
+/* popup 스타일: e */
 
-
-/* 202107 수정 :e */
+/* -----------------------------------------202107 수정 :e ---------------------------------------*/

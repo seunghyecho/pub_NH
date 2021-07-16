@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* 202107 수정 :s */
+/* --------------------------------- 202107 수정 :s --------------------------------------*/
 
 /*이벤트*/
 /*진행중 이벤트 리스트*/
@@ -239,7 +239,7 @@
   vertical-align: middle;
 }
 
-/* popup : s */
+/* popup 스타일 : s */
 .btn_area li {
   float: left;
   width: 25%;
@@ -272,7 +272,7 @@
 .btn_default_line.btn_default_orange {
   background: #f55217;
 }
-/* popup : e */
+/* popup 스타일: e */
 @media screen and (max-width: 768px) {
   .layout_wrap {
     position: relative;
@@ -285,4 +285,4 @@
   
 }
 
-/* 202107 수정 :e */
+/* -----------------------------------------202107 수정 :e ---------------------------------------*/
