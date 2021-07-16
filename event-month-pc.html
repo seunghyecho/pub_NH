@@ -14,7 +14,9 @@
       property="og:image"
       content="http://www.cheumsketch.co.kr/img/common/cheum_sns_logo.jpg"
     />
-    <title>Pub_Event_NH농협카드 채움스케치</title>
+     <!-- 뷰포트 추가 -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pub_Event_Month_PC Page</title>
     <!-- css -->
     <link
       rel="stylesheet"
@@ -24,7 +26,8 @@
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/common.css?200318" />
     <link rel="stylesheet" href="/css/sub.css?200717" />
-    <link rel="stylesheet" href="/css/event-month.css" />
+    <!-- 작심한달 pc css 링크 -->
+    <link rel="stylesheet" href="/css/event-month-pc.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -1680,21 +1683,13 @@
                   >
                 </li>
               </ul>
-              <!-- event-week : s -->
+              <!-- event-week 추가 : s -->
               <script>
                   $('.owl-carousel').owlCarousel({
                         loop:true,
                         margin:10,
                         nav:true,
-                        responsive:{
-                           
-                            600:{
-                                items:4
-                            },
-                            1000:{
-                                items:5
-                            }
-                        }
+                        items:5,
                     })
               </script>
               <div class="event-week">
@@ -1759,7 +1754,7 @@
       <div class="pop_jjindeal winningForm" style="display: none">
         <div class="jjinList_inbox">
           <div class="popup_contents">
-            <h1 class="title">찐딜 당첨 내역 조회</h1>
+            <h1 class="title">작심한달 당첨 내역 조회</h1>
             <div class="popup_tbl_demo_wrap">
               <form name="winningfrm" method="post">
                 <div class="inputBox_Wrap">
@@ -1835,7 +1830,7 @@
         <div class="inbox" style="border: 2px solid #333">
           <div class="popup_top" style="text-align: center; width: 100%">
             <h1 class="title">
-              NH농협카드 채움스케치 찐딜 이벤트<br /><span
+              NH농협카드 채움스케치 작심한달 이벤트<br /><span
                 >＊ 참여를 위해 아래 항목을 입력해 주세요.</span
               >
             </h1>
