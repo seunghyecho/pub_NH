@@ -273,16 +273,5 @@
   background: #f55217;
 }
 /* popup 스타일: e */
-@media screen and (max-width: 768px) {
-  .layout_wrap {
-    position: relative;
-    width: 100% !important;
-    margin: 0 auto;
-  }
-  .event_view_con{
-       width: 100% !important;
-  }
-  
-}
 
 /* -----------------------------------------202107 수정 :e ---------------------------------------*/
