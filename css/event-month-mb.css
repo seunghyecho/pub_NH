@@ -37,6 +37,7 @@
   width: 100%;
 }
 .event-week {
+  overflow: hidden;
   margin: 25px 0 25px 10px;
 }
 
