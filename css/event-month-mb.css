@@ -129,7 +129,7 @@
   height: 50px;
   line-height: 50px;
   border-radius: 50%;
-  background-color: #f55217;
+  background-color: #0078ff;
 }
 .event-week-inner .owl-item .event-on {
   width: 300px;
@@ -138,8 +138,8 @@
 .event-week-inner .owl-item .event-on .img-wrap {
   width: 100%;
   height: 100%;
-  box-shadow: 0px 10px 20px 0 rgba(245, 82, 23, 0.4);
-  border: solid 5px #f55217;
+  box-shadow: 0px 10px 20px 0 rgba(0, 120, 255, 0.4);
+  border: solid 5px #0078ff;
   border-radius: 50%;
   background-color: transparent;
   overflow: hidden;
@@ -215,8 +215,8 @@
   border: 2px solid #e6e6e6;
 }
 .crl_list .hot_btn_02 a {
-  background-color: #f55217;
-  border: 2px solid #f55217;
+  background-color: #0078ff;
+  border: 2px solid #0078ff;
 }
 
 /*시간*/
@@ -229,7 +229,7 @@
 .timeline .d_day {
   margin-right: 7px;
   font-weight: bold;
-  color: #f55217;
+  color: #0078ff;
 }
 .timeline span#end_hour,
 .timeline span#end_min,
@@ -284,8 +284,8 @@
   height: 50px;
 }
 .btn_area .btn_type {
-  background: #f55217;
-  border-color: #f55217;
+  background: #0078ff;
+  border-color: #0078ff;
   color: #fff;
 }
 
@@ -294,10 +294,10 @@
   padding: 0 20px;
   height: 50px;
   line-height: 50px;
-  background-color: #f55217 !important;
+  background-color: #0078ff !important;
 }
 .btn_default_line.btn_default_orange {
-  background: #f55217;
+  background: #0078ff;
 }
 /* popup 스타일: e */
 
