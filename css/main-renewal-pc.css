@@ -4,7 +4,7 @@
 }
 /* content01 */
 #contents .content01 {
-  margin: 0 auto;
+  margin: 30px auto;
   width: 960px;
 }
 #contents .content01 .inner {
@@ -22,9 +22,9 @@
   width: 100%;
 }
 #contents .content01 .inner .left .owl-carousel .owl-item {
-  height: 463px;
+  height: 426px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   border-radius: 10px;
   background-position: center;
   background-image: url(../img/main-sl@3x.png);
@@ -61,7 +61,7 @@
   display: none;
 }
 #contents .content01 .inner .left .notice {
-  margin-top: -25px;
+  margin-top: 15px;
   padding: 0 25px;
   display: flex;
   align-items: center;
@@ -100,18 +100,18 @@
   width: 100%;
 }
 #contents .content01 .inner .right ul li {
-  padding: 27px 30px;
-  box-sizing: border-box;
-  width: calc(273px - 45px);
-  height: calc(273px - 45px);
-  margin-right: 13px;
-  margin-bottom: 13px;
-  border-radius: 20px;
-  background-color: #ffd63c;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
+    padding: 27px 30px;
+    box-sizing: border-box;
+    width: calc(273px - 50px);
+    height: calc(273px - 25px);
+    margin-right: 13px;
+    margin-bottom: 13px;
+    border-radius: 20px;
+    background-color: #ffd63c;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
 #contents .content01 .inner .right ul li:nth-of-type(2n) {
   margin-right: 0;
