@@ -11,7 +11,7 @@
       property="og:image"
       content="http://www.cheumsketch.co.kr/img/common/cheum_sns_logo.jpg"
     />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pub_NH농협카드 채움스케치</title>
     <!-- css -->
     <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css" />
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/common.css" />
     <!-- main renewal pc css -->
-    <link rel="stylesheet" href="css/main-renewal-pc.css" />
+    <link rel="stylesheet" href="css/main-renewal-mb.css" />
     <!-- //css -->
     <!-- js -->
     <script src="lib/jquery-3.2.1.js"></script>
@@ -65,31 +65,8 @@
   <body>
     <div id="wrap">
       <header id="header">
-        <div class="hd_top clearfix">
+        <div class="hd_top">
           <div class="layout_wrap">
-            <ul class="hd_top_menu clearfix">
-              <li class="li01">
-                <a
-                  class="personal"
-                  onclick="goNhcmu('13', '1', 'http://www.nhcardsoho.com/index.do', '_blank')"
-                  style="cursor: pointer"
-                  >개인사업자</a
-                >
-              </li>
-
-              <li class="li03">
-                <a
-                  class="guide"
-                  onclick="goNhcmu('11', '1', '/usage_guide.do', '_self')"
-                  style="cursor: pointer"
-                  >이용가이드</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="hd_bottom">
-          <div class="layout_wrap btmBorder">
             <h1 class="logo">
               <a
                 href="https://card.nonghyup.com"
@@ -104,6 +81,25 @@
                   alt="채움스케치 생활,문화 할인 서비스"
               /></a>
             </h1>
+            <ul class="hd_top_menu clearfix">
+           
+              <li class="li01">
+                <a
+                  class="personal"
+                  onclick="goNhcmu('13', '1', 'http://www.nhcardsoho.com/index.do', '_blank')"
+                  style="cursor: pointer"
+                  ><img src="img/main-top-icon-1.png" alt="">개인사업자</a
+                >
+              </li>
+              <li>
+                <button class="menu_all_open">전체메뉴 열기</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hd_bottom">
+          <div class="layout_wrap btmBorder">
+           
             <nav id="gnb">
               <h2 class="txt_hide">주메뉴</h2>
               <ul class="">
@@ -476,7 +472,6 @@
                 </li>
               </ul>
             </nav>
-            <button class="menu_all_open">전체메뉴 열기</button>
           </div>
           <div class="manu_all_wrap" style="display: none">
             <h2 class="txt_hide">전체메뉴</h2>
