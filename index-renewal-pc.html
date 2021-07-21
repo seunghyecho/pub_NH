@@ -50,6 +50,19 @@
         $(".tab_con").eq(randomNum).addClass("active");
       });
     </script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          items: 1,
+		  dots:false,
+		  autoWidth: false,
+
+        });
+      });
+    </script>
 
     <!-- //js -->
   </head>
@@ -469,7 +482,7 @@
             </nav>
             <button class="menu_all_open">전체메뉴 열기</button>
           </div>
-          <div class="manu_all_wrap" style="display: block">
+          <div class="manu_all_wrap" style="display: none">
             <h2 class="txt_hide">전체메뉴</h2>
             <nav id="menuAll" class="clearfix">
               <ul class="main_menu clearfix layout_wrap">
@@ -866,7 +879,7 @@
                 </li>
               </ul>
             </nav>
-            <button class="menu_all_close">전체메뉴 닫기</button>
+            <!-- <button class="menu_all_close">전체메뉴 닫기</button> -->
           </div>
         </div>
       </header>
@@ -874,6 +887,111 @@
       <!-- 본문 내용 : s -->
       <section id="contents">
         <h2 class="txt_hide">본문 내용</h2>
+        <div class="wrap">
+          <div class="content content01">
+            <div class="inner">
+              <div class="left">
+                <div class="owl-carousel owl-theme">
+                  <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                      <div class="owl-item"></div>
+                      <div class="owl-item"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="notice">
+					<h1>새소식</h1>
+					<dl class="noticeList">
+						<dt>NH채움스케치 리뉴얼 안내</dt>
+						<dd>2021.08.01.</dd>
+					</dl>
+				</div>
+              </div>
+              <div class="right">
+                <ul>
+                  <li class="event item01">
+                    <a href="#">
+                      <h1>NH농협<br />60주년 기념</h1>
+                      <h3>GO! 작심한달<br />이벤트</h3>
+                    </a>
+                  </li>
+				  <li class="event item02">
+                    <a href="#">
+                      <h1>진짜핫딜! 찐딜!<br>
+						매주 수요일<br>
+						오전 11시</h1>
+                      <h3>득템 기회<br>
+						놓치지 마세요</h3>
+                    </a>
+                  </li>
+				  <li class="event item03">
+                    <a href="#">
+                      <h1>채움스케치<br>
+						행운의 보드게임</h1>
+                      <h3>모두의 혜택</h3>
+                    </a>
+                  </li>
+				  <li class="event item04">
+                    <a href="#">
+                      <h1>NH농협카드<br>
+						고객대상</h1>
+                      <h3>럭키 찬스 이벤트</h3>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+		  <div class="content content02">
+			<div class="inner">
+				<h1>채움스케치 PICK</h1>
+				<ul>
+					<li>
+						<a href="#">
+							<div class="icon"></div>
+							<p>쇼핑</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon"></div>
+							<p>여행</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon"></div>
+							<p>골프</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon"></div>
+							<p>교육</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon"></div>
+							<p>육아</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon"></div>
+							<p>라이프</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon"></div>
+							<p>이벤트</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		  </div>
+        </div>
       </section>
       <!-- 본문 내용 : e -->
 
