@@ -90,18 +90,13 @@ a:hover, a:link, a:visited, a:focus { outline:0; text-decoration:none; }
 
 /*layout*/
 .layout_wrap { position: relative; width: 960px !important; margin: 0 auto; }
-.layout_wrap:after { content: " "; display: block; clear: both; }
-.layout_wrap2 { position: relative; width: 960px !important; margin: 0 auto; padding-top:85px; }
-.layout_wrap2:after { content: " "; display: block; clear: both; }
-.img_box:nth-of-type(1){
+.logo .img_box:nth-of-type(1){
 	margin-right: 8px;
-	width: 80px;
+	width: 100px;
 }
-.img_box:nth-of-type(2){
-	width: 75px;
+.logo .img_box:nth-of-type(2){
+	width: 95px;
 }
-.img_box { line-height: 0 !important; }
-.img_box img { max-width: 100%; height: auto; }
 .txt_hide { overflow: hidden; width: 0; height: 0; font-size: 0; line-height: 0; text-indent: -9999px; }
 
 /*header*/
@@ -165,7 +160,7 @@ a:hover, a:link, a:visited, a:focus { outline:0; text-decoration:none; }
 }
 .hd_bottom button { display: inline-block; user-select: none; border: 0; background-color: transparent; }
 .hd_bottom button.menu_all_open { 
-	margin-left: 35px;
+	margin-left: 50px;
 	overflow: hidden;
     width: 20px;
     height: 19px;
@@ -187,7 +182,7 @@ a:hover, a:link, a:visited, a:focus { outline:0; text-decoration:none; }
 #gnb > ul > li { 
 	float: left;
     position: relative;
-    padding: 0 34px;
+    padding: 0 30px;
     cursor: pointer;
 }
 #gnb > ul > li:last-child{
@@ -195,7 +190,7 @@ a:hover, a:link, a:visited, a:focus { outline:0; text-decoration:none; }
 }
 #gnb > ul > li > a {
 	position: relative;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.82;
     letter-spacing: normal;
@@ -258,8 +253,6 @@ a:hover, a:link, a:visited, a:focus { outline:0; text-decoration:none; }
 #gnb > ul > li.li09 > div > ul > li > a:hover { color: #eb1b1b; text-decoration-color: #eb1b1b; }
 #gnb > ul > li.li10 > div > ul > li > a:hover { color: #4d2d9c; text-decoration-color: #4d2d9c; }
 #gnb > ul > li.li011 > div > ul > li > a:hover{ color: #333;  }
-
-
 
 .manu_all_wrap{
 	position: absolute;
