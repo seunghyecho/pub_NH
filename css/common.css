@@ -1,7 +1,7 @@
 @charset "UTF-8";
-@import url(fonts/notosanskr.css);
+/* @import url(fonts/notosanskr.css); */
 /*font-family: 'Noto Sans KR', sans-serif;*/
-
+/* 
  @font-face {
 	font-family: 'Noto Sans Korean';
 	font-style: normal;
@@ -77,7 +77,7 @@
 	url(fonts/eot/NotoSansKR-Black-Hestia.eot?#iefix) format('embedded-opentype'),
 	url(fonts/woff/NotoSansKR-Black-Hestia.woff) format('woff'),
 	url(fonts/otf/NotoSansKR-Black-Hestia.otf) format('opentype');
-}
+} */
 
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary { font-weight: 400; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; -webkit-text-stroke: 0.45px; -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1); font-smooth: always; -webkit-font-smoothing: subpixel-antialiased; }
 
@@ -213,26 +213,87 @@ a:hover, a:link, a:visited, a:focus { outline:0; text-decoration:none; }
 .white_txt { color: #fff; }
 
 /*footer*/
-#footer { border-top: 1px solid #5d5d5d; }
-.ft_top { padding: 25px 0px 25px; }
-.company_name { float:left;padding-right:60px;font-size:14px;}
-.ft_policy { margin-bottom: 10px; }
-.ft_policy li { position: relative; float: left; padding: 0 30px; }
-.ft_policy li:after { content: ''; position: absolute; top: 50%; right: 0; margin-top: -5px; width: 1px; height: 10px; background-color: #c2c2c2 }
-.ft_policy li:first-child { padding-left: 0; }
-.ft_policy li:last-child:after { display: none; }
-.ft_policy li a { font-size: 13px; color: #5d5d5d; }
-.ft_policy li.li01 a { color: #000; }
-.ft_top .ft_b_l { float: left; margin-left: 20px; }
-.ft_logo { float: left; margin-right: 20px; }
-.ft_info { float: left; color: #666; line-height: 1.8; }
-.ft_info > address { display: inline-block; position: relative; padding-right: 12px; margin-right: 6px; font-style: normal; color: #666; }
-.ft_info > address:after { content: ''; display: block; position: absolute; top: 50%; right: 0; margin-top: -5px; width: 1px; height: 10px; background-color: #666; }
-.ft_info > span { display: inline-block; color: #666; }
-.ft_info p { margin-top: 5px; color: #666; text-transform: uppercase; text-transform: uppercase; }
-.ft_info p span { color: #3b7bbc; }
-.ft_top .ft_t_r { float: right; margin-right: 5px; }
-.cs_num span { margin-left: 50px; color: #5d5d5d; vertical-align: middle; font-size: 13px; }
-.cs_num span strong { color: #000; }
-.ft_bottom { padding: 8px 0px; border-top: 1px solid #e0e0e0; background-color: #f7f7f7; color: #7b7b7b; }
-.ft_bottom p { padding-left: 22px; background: url(/img/common/screamer_ico.png) left center no-repeat; font-size: 12px; }
+#footer .ft_top{
+  background-color: #1e64b1;
+}
+#footer .ft_btm{
+  background-color: #1659a3;
+}
+#footer .ft_top .inner{
+	padding: 15px 0;
+	margin: 0 auto;
+	width: 960px;
+	height: 100%;
+}
+#footer .ft_btm .inner{
+	padding: 20px 0;
+	margin: 0 auto;
+	width: 960px;
+	height: 100%;
+}
+#footer .ft_btm .inner  > *{
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.43;
+	letter-spacing: normal;
+	text-align: left;
+	color: #ffffff;
+}
+
+#footer .inner ul.ft_policy::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+#footer .inner ul.ft_policy li { 
+	position: relative; 
+	float: left; 
+	padding: 0 10px; 
+}
+#footer .inner ul.ft_policy li:after { 
+	content: ''; 
+	position: absolute; 
+	top: 50%; 
+	right: 0; 
+	margin-top: -5px; 
+	width: 1px; 
+	height: 10px; 
+	background-color: #c2c2c2 
+}
+#footer .inner ul.ft_policy li:first-child { 
+	padding-left: 0; 
+}
+#footer .inner ul.ft_policy li:last-child:after { 
+	display: none; 
+}
+#footer .inner ul.ft_policy li a{
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.43;
+	letter-spacing: normal;
+	text-align: left;
+	color: #ffffff;
+}
+#footer .ft_btm .inner span{
+	display: inline-block;
+}
+#footer .ft_btm .inner span.company_name{
+	margin-right: 10px;
+}
+#footer .ft_btm .inner span.address {
+	margin-right: 15px;
+	position: relative;
+ }
+ #footer .ft_btm .inner span.address:after { 
+	content: '';
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    margin-top: -6px;
+    width: 1px;
+    height: 15px;
+    background-color: #c2c2c2;
+}
+#footer .ft_btm .inner span address{
+	font-style: normal;
+}
