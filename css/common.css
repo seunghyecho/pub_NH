@@ -910,8 +910,8 @@ a:focus {
   .hd_bottom .layout_wrap {
     flex-direction: column;
     align-items: baseline;
-    height: 45px;
-    line-height: 45px;
+    height: 55px;
+    line-height: 55px;
     border-top: 1px solid #dcdcdc;
     overflow-x: auto;
   }
