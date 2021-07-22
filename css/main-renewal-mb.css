@@ -27,7 +27,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../img/main-sl@3x.png);
+  background-image: url(../img/main-sl-mb@3x.png);
 }
 #contents .content01 .inner .left .owl-carousel .owl-nav {
   padding: 0 20px;
@@ -38,19 +38,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  opacity: 0.5;
 }
 
 #contents .content01 .inner .left .owl-carousel .owl-nav button.owl-prev {
-  width: 23px;
-  height: 38px;
+  width: 16px;
+  height: 28px;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
   background-image: url(../img/sl-arrow-1.png);
 }
 #contents .content01 .inner .left .owl-carousel .owl-nav button.owl-next {
-  width: 23px;
-  height: 38px;
+  width: 16px;
+  height: 28px;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -61,7 +62,7 @@
 }
 #contents .content01 .inner .left .notice {
   margin: 10px;
-  padding: 0 25px;
+  padding: 0 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -69,12 +70,26 @@
   background-color: #f4f8fd;
 }
 #contents .content01 .inner .left .notice h1 {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
   line-height: 2.23;
   letter-spacing: -1.2px;
   text-align: left;
   color: #1e1e1e;
+  position: relative;
+}
+#contents .content01 .inner .left .notice.active h1::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+
+  right: -8px;
+  top: 3px;
+
+  width: 6px;
+  height: 6px;
+  background-color: #f44b14;
+  border-radius: 50%;
 }
 #contents .content01 .inner .left .notice .noticeList {
   display: flex;
@@ -101,7 +116,7 @@
 #contents .content01 .inner .right ul li {
   padding: 30px 20px;
   box-sizing: border-box;
-  width: calc(100%/2 - 15px);
+  width: calc(100% / 2 - 15px);
   margin-right: 10px;
   height: 172px;
   margin-bottom: 13px;
@@ -166,17 +181,17 @@
 #contents .content01 .inner .right ul li h1 {
   font-size: 16px;
   font-weight: 600;
-  line-height: 1.13;
-  letter-spacing: normal;
+  line-height: 1.25;
+  letter-spacing: -1.28px;
   text-align: left;
   color: #ffffff;
 }
 
 #contents .content01 .inner .right ul li h3 {
-  margin-top: 12px;
-  font-size: 14px;
+  margin-top: 10px;
+  font-size: 12px;
   font-weight: 500;
-  line-height: 1.25;
+  line-height: 1.36;
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
@@ -214,14 +229,14 @@
   background-color: #ea5472;
 }
 #contents .content02 ul {
-  margin-top: 40px;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   overflow-x: auto;
 }
-#contents .content02 ul li{
-  margin: 0 8px;
+#contents .content02 ul li {
+  margin: 0 5px;
 }
 #contents .content02 ul li a {
   display: flex;
@@ -230,7 +245,7 @@
   flex-direction: column;
 }
 #contents .content02 ul li a .icon {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   width: 75px;
   height: 75px;
   border-radius: 50%;
@@ -244,7 +259,7 @@
   box-shadow: 0px 18px 49px 0 rgba(126, 144, 167, 0.2);
 }
 #contents .content02 ul li a p {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
   line-height: 1.69;
   letter-spacing: normal;
@@ -297,7 +312,11 @@
   background-image: url(../img/main-ctg-icon-7-on.png);
 }
 /* content03 */
-#contents .content03 .inner,
+#contents .content03 .inner {
+  margin: 20px auto;
+  width: 100%;
+}
+
 #contents .content04 .inner {
   margin: 40px auto;
   width: 100%;
@@ -336,41 +355,41 @@
 .content04 ul li:nth-of-type(2n) {
   margin-right: 0;
 }
-.content04 ul li.icon::before{
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 100px;
-    height: 52px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+.content04 ul li.icon::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: 20px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.content04 ul li.icon.address11:before{
-    background-image: url(../img/logo-01.png);
+.content04 ul li.icon.address11:before {
+  background-image: url(../img/logo-01.png);
 }
-.content04 ul li.icon.expedia:before{
-    background-image: url(../img/logo-02.png);
+.content04 ul li.icon.expedia:before {
+  background-image: url(../img/logo-02.png);
 }
-.content04 ul li.icon.xGolf:before{
-    background-image: url(../img/logo-03.png);
+.content04 ul li.icon.xGolf:before {
+  background-image: url(../img/logo-03.png);
 }
-.content04 ul li.icon.myPet:before{
-    background-image: url(../img/logo-04.png);
+.content04 ul li.icon.myPet:before {
+  background-image: url(../img/logo-04.png);
 }
-.content04 ul li.icon.wemep:before{
-    background-image: url(../img/logo-05.png);
+.content04 ul li.icon.wemep:before {
+  background-image: url(../img/logo-05.png);
 }
-.content04 ul li.icon.touch:before{
-    background-image: url(../img/logo-06.png);
+.content04 ul li.icon.touch:before {
+  background-image: url(../img/logo-06.png);
 }
-.content04 ul li.icon.esofting:before{
-    background-image: url(../img/logo-07.png);
+.content04 ul li.icon.esofting:before {
+  background-image: url(../img/logo-07.png);
 }
-.content04 ul li.icon.hugMom:before{
-    background-image: url(../img/logo-08.png);
+.content04 ul li.icon.hugMom:before {
+  background-image: url(../img/logo-08.png);
 }
 .content04 ul li a {
   display: block;

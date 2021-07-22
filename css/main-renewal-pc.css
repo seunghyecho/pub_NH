@@ -76,6 +76,20 @@
   letter-spacing: -0.8px;
   text-align: left;
   color: #1e1e1e;
+  position: relative;
+}
+#contents .content01 .inner .left .notice.active h1::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+ 
+  right: -15px;
+  top: 20px;
+
+  width: 10px;
+  height: 10px;
+  background-color: #f44b14;
+  border-radius: 50%;
 }
 #contents .content01 .inner .left .notice .noticeList {
   display: flex;
