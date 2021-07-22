@@ -353,6 +353,7 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.3);
 }
 .content04 ul li.icon.address11:before {
   background-image: url(../img/main/logo-01.png);
