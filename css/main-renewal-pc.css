@@ -27,7 +27,7 @@
   background-size: cover;
   border-radius: 10px;
   background-position: center;
-  background-image: url(../img/main-sl@3x.png);
+  background-image: url(../img/main/main-sl@3x.png);
 }
 #contents .content01 .inner .left .owl-carousel .owl-nav {
   position: absolute;
@@ -46,7 +46,7 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  background-image: url(../img/sl-arrow-1.png);
+  background-image: url(../img/main/sl-arrow-1.png);
 }
 #contents .content01 .inner .left .owl-carousel .owl-nav button.owl-next {
   margin-right: -27px;
@@ -55,7 +55,7 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  background-image: url(../img/sl-arrow-2.png);
+  background-image: url(../img/main/sl-arrow-2.png);
 }
 #contents .content01 .inner .left .owl-carousel .owl-nav button span {
   display: none;
@@ -143,37 +143,37 @@
 #contents .content01 .inner .right ul li.item01::after {
   width: 45px;
   height: 45px;
-  background-image: url(../img/banner-01-icon.png);
+  background-image: url(../img/main/banner-01-icon.png);
 }
 #contents .content01 .inner .right ul li.item02::after {
   width: 50px;
   height: 75px;
-  background-image: url(../img/banner-02-img.png);
+  background-image: url(../img/main/banner-02-img.png);
 }
 #contents .content01 .inner .right ul li.item03::after {
   width: 67px;
   height: 67px;
-  background-image: url(../img/banner-03-icon.png);
+  background-image: url(../img/main/banner-03-icon.png);
 }
 #contents .content01 .inner .right ul li.item04::after {
   width: 55px;
   height: 55px;
-  background-image: url(../img/banner-04-icon.png);
+  background-image: url(../img/main/banner-04-icon.png);
 }
 
 #contents .content01 .inner .right ul li.item01 {
-  background-image: url(../img/banner-01-bg-off.png);
+  background-image: url(../img/main/banner-01-bg-off.png);
 }
 #contents .content01 .inner .right ul li.item02 {
-  background-image: url(../img/banner-02-bg-off.png);
+  background-image: url(../img/main/banner-02-bg-off.png);
 }
 #contents .content01 .inner .right ul li.item03 {
   margin-bottom: 0;
-  background-image: url(../img/banner-03-bg-off.png);
+  background-image: url(../img/main/banner-03-bg-off.png);
 }
 #contents .content01 .inner .right ul li.item04 {
   margin-bottom: 0;
-  background-image: url(../img/banner-04-bg-off.png);
+  background-image: url(../img/main/banner-04-bg-off.png);
 }
 #contents .content01 .inner .right ul li a {
   display: block;
@@ -266,46 +266,46 @@
   color: #ea5472;
 }
 #contents .content02 ul li:nth-of-type(1) a .icon {
-  background-image: url(../img/main-ctg-icon-1-off.png);
+  background-image: url(../img/main/main-ctg-icon-1-off.png);
 }
 #contents .content02 ul li:nth-of-type(2) a .icon {
-  background-image: url(../img/main-ctg-icon-2-off.png);
+  background-image: url(../img/main/main-ctg-icon-2-off.png);
 }
 #contents .content02 ul li:nth-of-type(3) a .icon {
-  background-image: url(../img/main-ctg-icon-3-off.png);
+  background-image: url(../img/main/main-ctg-icon-3-off.png);
 }
 #contents .content02 ul li:nth-of-type(4) a .icon {
-  background-image: url(../img/main-ctg-icon-4-off.png);
+  background-image: url(../img/main/main-ctg-icon-4-off.png);
 }
 #contents .content02 ul li:nth-of-type(5) a .icon {
-  background-image: url(../img/main-ctg-icon-5-off.png);
+  background-image: url(../img/main/main-ctg-icon-5-off.png);
 }
 #contents .content02 ul li:nth-of-type(6) a .icon {
-  background-image: url(../img/main-ctg-icon-6-off.png);
+  background-image: url(../img/main/main-ctg-icon-6-off.png);
 }
 #contents .content02 ul li:nth-of-type(7) a .icon {
-  background-image: url(../img/main-ctg-icon-7-off.png);
+  background-image: url(../img/main/main-ctg-icon-7-off.png);
 }
 #contents .content02 ul li:hover:nth-of-type(1) a .icon {
-  background-image: url(../img/main-ctg-icon-1-on.png);
+  background-image: url(../img/main/main-ctg-icon-1-on.png);
 }
 #contents .content02 ul li:hover:nth-of-type(2) a .icon {
-  background-image: url(../img/main-ctg-icon-2-on.png);
+  background-image: url(../img/main/main-ctg-icon-2-on.png);
 }
 #contents .content02 ul li:hover:nth-of-type(3) a .icon {
-  background-image: url(../img/main-ctg-icon-3-on.png);
+  background-image: url(../img/main/main-ctg-icon-3-on.png);
 }
 #contents .content02 ul li:hover:nth-of-type(4) a .icon {
-  background-image: url(../img/main-ctg-icon-4-on.png);
+  background-image: url(../img/main/main-ctg-icon-4-on.png);
 }
 #contents .content02 ul li:hover:nth-of-type(5) a .icon {
-  background-image: url(../img/main-ctg-icon-5-on.png);
+  background-image: url(../img/main/main-ctg-icon-5-on.png);
 }
 #contents .content02 ul li:hover:nth-of-type(6) a .icon {
-  background-image: url(../img/main-ctg-icon-6-on.png);
+  background-image: url(../img/main/main-ctg-icon-6-on.png);
 }
 #contents .content02 ul li:hover:nth-of-type(7) a .icon {
-  background-image: url(../img/main-ctg-icon-7-on.png);
+  background-image: url(../img/main/main-ctg-icon-7-on.png);
 }
 /* content03 */
 #contents .content03 .inner,
@@ -359,28 +359,28 @@
     background-repeat: no-repeat;
 }
 .content04 ul li.icon.address11:before{
-    background-image: url(../img/logo-01.png);
+    background-image: url(../img/main/logo-01.png);
 }
 .content04 ul li.icon.expedia:before{
-    background-image: url(../img/logo-02.png);
+    background-image: url(../img/main/logo-02.png);
 }
 .content04 ul li.icon.xGolf:before{
-    background-image: url(../img/logo-03.png);
+    background-image: url(../img/main/logo-03.png);
 }
 .content04 ul li.icon.myPet:before{
-    background-image: url(../img/logo-04.png);
+    background-image: url(../img/main/logo-04.png);
 }
 .content04 ul li.icon.wemep:before{
-    background-image: url(../img/logo-05.png);
+    background-image: url(../img/main/logo-05.png);
 }
 .content04 ul li.icon.touch:before{
-    background-image: url(../img/logo-06.png);
+    background-image: url(../img/main/logo-06.png);
 }
 .content04 ul li.icon.esofting:before{
-    background-image: url(../img/logo-07.png);
+    background-image: url(../img/main/logo-07.png);
 }
 .content04 ul li.icon.hugMom:before{
-    background-image: url(../img/logo-08.png);
+    background-image: url(../img/main/logo-08.png);
 }
 .content04 ul li a {
   display: block;
