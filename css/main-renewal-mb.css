@@ -235,6 +235,7 @@
 }
 #contents .content02 ul li {
   margin: 0 5px;
+  min-width: 22%;
 }
 #contents .content02 ul li a {
   display: flex;
