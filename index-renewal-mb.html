@@ -61,6 +61,11 @@
         $(window).scroll(function(){
           $('.hd_top').addClass('fixed');
         });
+
+        $('#menuAll > ul.main_menu > li > ul').hide();
+        $('#menuAll > ul.main_menu > li').on('click', function(){
+          $(this).children('ul').toggle();
+        });
       });
     </script>
 
