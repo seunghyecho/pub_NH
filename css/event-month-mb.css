@@ -41,20 +41,20 @@
   margin: 25px 0 25px 10px;
 }
 
-.event-week-inner {
+.event-week .event-week-inner {
   display: flex;
   justify-content: space-between;
   width: 100%;
   position: relative;
 }
-.owl-carousel .owl-stage {
+.event-week .owl-carousel .owl-stage {
   display: flex;
   margin-right: 30px;
 }
-.owl-carousel .owl-stage-outer {
+.event-week .owl-carousel .owl-stage-outer {
   overflow: visible !important;
 }
-.owl-nav {
+.event-week .owl-nav {
   display: flex;
   align-items: center;
   position: absolute;
@@ -62,20 +62,20 @@
   transform: translateY(-50%);
   width: 100%;
 }
-.owl-nav button {
+.event-week .owl-nav button {
   width: 30px;
   height: 30px;
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
-.owl-nav button span {
+.event-week .owl-nav button span {
   color: #fff;
 }
-.owl-nav button.owl-prev {
+.event-week .owl-nav button.owl-prev {
   left: 0;
   margin-right: auto;
   display: block;
 }
-.owl-nav button.owl-next {
+.event-week .owl-nav button.owl-next {
   right: 0;
   margin-left: auto;
   margin-right: 10px;

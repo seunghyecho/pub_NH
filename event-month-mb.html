@@ -15,14 +15,11 @@
       content="http://www.cheumsketch.co.kr/img/common/cheum_sns_logo.jpg"
     />
     <!-- 뷰포트 추가 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pub_Event_Month_Mobile Page</title>
     <!-- css -->
-    <link
-      rel="stylesheet"
-      href="lib/owlcarousel/assets/owl.carousel.min.css"
-    />
-    
+    <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css" />
+
     <link rel="stylesheet" href="lib/animate.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/sub.css" />
@@ -147,16 +144,15 @@
       gtag("js", new Date());
       gtag("config", "UA-154355321-1");
     </script>
-     
   </head>
   <body>
     <div id="wrap">
       <link rel="stylesheet" href="css/event.css" />
       <link rel="stylesheet" href="css/popup_tb.css" />
       <link
-      rel="stylesheet"
-      href="lib/owlcarousel/assets/owl.carousel.min.css"
-    />
+        rel="stylesheet"
+        href="lib/owlcarousel/assets/owl.carousel.min.css"
+      />
       <!-- 디자인 상 헤더 삭제 -->
       <!-- 날짜 포멧 변경 -->
 
@@ -182,7 +178,7 @@
             "left",
             Math.max(
               0,
-              ($(window).width() - $(this).outerWidth()*2) / 2 +
+              ($(window).width() - $(this).outerWidth() * 2) / 2 +
                 $(window).scrollLeft()
             ) + "px"
           );
@@ -562,26 +558,28 @@
           });
         }
       </script>
-       <script>
+      <script>
         //  작심한달 이벤트 내 월,화,수,목,금,토
-         $(document).ready(function(){
-        $('.owl-carousel').owlCarousel({
-              loop:false,
-              margin: 10,
-              nav:true,
-              dots:false,
-              autoWidth:true,
-              items:4,
-          })
+        $(document).ready(function () {
+          $(".event-week-inner").owlCarousel({
+            loop: false,
+            margin: 10,
+            nav: true,
+            dots: false,
+            autoWidth: true,
+            items: 4,
+          });
         });
-    </script>
+      </script>
 
       <div id="content">
         <div class="layout_wrap">
           <div class="event_view_con">
             <div class="t-center">
               <p><img src="img/event/m-event-01.jpg" alt="" /></p>
-              <p style="margin-top: -5px;"><img src="img/event/m-event-02.jpg" alt="" /></p>
+              <p style="margin-top: -5px">
+                <img src="img/event/m-event-02.jpg" alt="" />
+              </p>
               <div class="dt_dealArea">
                 <div class="dt_deal">
                   <h2 class="timedel">응모종료</h2>
@@ -618,57 +616,54 @@
                 </li>
               </ul>
               <!-- event-week 추가 : s -->
-            
+
               <div class="event-week">
                 <div class="event-week-inner owl-carousel owl-theme">
-                    <div class="item" style="width:122px">
-                        <div class="day mon"></div>
-                        <div class="img-wrap">
-                            <img src="img/event/product-img-1.png" alt="">
-                        </div>
+                  <div class="item" style="width: 122px">
+                    <div class="day mon"></div>
+                    <div class="img-wrap">
+                      <img src="img/event/product-img-1.png" alt="" />
                     </div>
-                    <div class="item event-on" style="width:300px">
-                        <div class="day tue"></div>
-                        <div class="img-wrap">
-                            <img src="img/event/product-img-2.png" alt="">
-                        </div>
+                  </div>
+                  <div class="item event-on" style="width: 300px">
+                    <div class="day tue"></div>
+                    <div class="img-wrap">
+                      <img src="img/event/product-img-2.png" alt="" />
                     </div>
-                    <div class="item event-win" style="width:122px">
-                        <div class="day wed"></div>
-                        <div class="img-wrap">
-                            <img src="#" alt="">
-                        </div>
-                        <div class="text">
-                            <span>당첨자 수</span>
-                            <span class="person"><strong>1</strong>명</span>
-                        </div>
+                  </div>
+                  <div class="item event-win" style="width: 122px">
+                    <div class="day wed"></div>
+                    <div class="img-wrap">
+                      <img src="#" alt="" />
                     </div>
-                    <div class="item event-low" style="width:122px">
-                        <div class="day thu"></div>
-                        <div class="img-wrap">
-                            <img src="img/event/q-mark.png" alt="">
-                        </div>
+                    <div class="text">
+                      <span>당첨자 수</span>
+                      <span class="person"><strong>1</strong>명</span>
                     </div>
-                    <div class="item event-low" style="width:122px">
-                        <div class="day fri"></div>
-                        <div class="img-wrap">
-                            <img src="img/event/q-mark.png" alt="">
-                        </div>
+                  </div>
+                  <div class="item event-low" style="width: 122px">
+                    <div class="day thu"></div>
+                    <div class="img-wrap">
+                      <img src="img/event/q-mark.png" alt="" />
                     </div>
-                    <div class="item event-low" style="width:122px">
-                        <div class="day sat"></div>
-                        <div class="img-wrap">
-                            <img src="img/event/q-mark.png" alt="">
-                        </div>
+                  </div>
+                  <div class="item event-low" style="width: 122px">
+                    <div class="day fri"></div>
+                    <div class="img-wrap">
+                      <img src="img/event/q-mark.png" alt="" />
                     </div>
+                  </div>
+                  <div class="item event-low" style="width: 122px">
+                    <div class="day sat"></div>
+                    <div class="img-wrap">
+                      <img src="img/event/q-mark.png" alt="" />
+                    </div>
+                  </div>
                 </div>
               </div>
               <!-- event-week : e -->
               <p class="event-info">
-                <img
-                  src="img/event/m-event-2-info.png"
-                  alt=""
-                />
+                <img src="img/event/m-event-2-info.png" alt="" />
               </p>
             </div>
           </div>
@@ -913,7 +908,7 @@
         frameborder="0"
       >
       </iframe>
-    <!-- 디자인 상 푸터 삭제 -->
+      <!-- 디자인 상 푸터 삭제 -->
     </div>
     <script type="text/javascript">
       log("12", "7");
