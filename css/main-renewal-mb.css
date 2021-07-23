@@ -235,7 +235,6 @@
 }
 #contents .content02 ul li {
   margin: 0 5px;
-  min-width: 22%;
 }
 #contents .content02 ul li a {
   display: flex;
@@ -314,6 +313,9 @@
 #contents .content03 .inner {
   margin: 20px auto;
   width: 100%;
+}
+#contents .content03 .inner a{
+  display: block;
 }
 
 #contents .content04 .inner {

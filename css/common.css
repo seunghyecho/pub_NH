@@ -907,17 +907,20 @@ a:focus {
   header .logo {
     display: flex;
   }
+  .hd_bottom{
+    overflow: hidden;
+  }
   .hd_bottom .layout_wrap {
-    flex-direction: column;
+    flex-direction: unset;
     align-items: baseline;
     height: 55px;
     line-height: 55px;
     border-top: 1px solid #dcdcdc;
     overflow-x: auto;
+    overflow-y: hidden;
   }
-  #gnb {
-    overflow-x: auto;
-    width: max-content;
+  #gnb > ul{
+    width: 120%;
   }
   #gnb > ul > li {
     padding: 0;
