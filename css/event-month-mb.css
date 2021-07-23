@@ -63,23 +63,34 @@
   width: 100%;
 }
 .event-week .owl-nav button {
-  width: 30px;
+  /* width: 30px;
   height: 30px;
-  background-color: rgba(0, 0, 0, 0.4) !important;
+  background-color: rgba(0, 0, 0, 0.4) !important; */
 }
 .event-week .owl-nav button span {
   color: #fff;
+  display: none;
 }
 .event-week .owl-nav button.owl-prev {
   left: 0;
   margin-right: auto;
   display: block;
+  width: 30px;
+  height: 30px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-image: url(../img/event/arrow-prev.png) !important;
 }
 .event-week .owl-nav button.owl-next {
   right: 0;
   margin-left: auto;
   margin-right: 10px;
   display: block;
+  width: 30px;
+  height: 30px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-image: url(../img/event/arrow-next.png) !important;
 }
 .event-week-inner img {
   width: 100%;
