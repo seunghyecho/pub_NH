@@ -138,6 +138,15 @@
 .menu_banner { margin-bottom: 10px; }
 .menu_banner > a { display: block; }
 .menu_banner > a img { width: 100%; }
+
+.manu_all_wrap {
+   display: none;
+}
+.manu_all_wrap .layout_wrap {
+display: none;
+}
+
+
 .manu_all_wrap button.menu_all_close {overflow: hidden;position: absolute;top: 15px;right: 10px;width: 30px;height: 27.5px;border: none;background: url(/img/mobile/common/menu_all_close.png) no-repeat center center;-webkit-background-size: 30px;background-size: 30px;text-indent: -9999px;}
 .menu_partners > ul > li > a > dl{ display: inline-block; width: 100%; padding-right: 0px; height: 100%;}
 .menu_partners > ul > li > a > dl > dt{ display: inline-block; float: left; padding: 20.5px 20px; min-width: 147px; position: relative;}
