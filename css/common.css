@@ -504,7 +504,7 @@ a:focus {
   background-size: cover;
   background-position: center;
 }
-#menuAll > ul.main_menu > li {
+#menuAll > ul.main_menu.pc > li {
   float: left;
   width: auto;
   margin: 35px;
