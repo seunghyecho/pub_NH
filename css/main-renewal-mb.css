@@ -445,6 +445,9 @@
 .mobile-menu.owl-carousel .owl-stage{
   width: 180% !important; 
 }
+.mobile-menu.owl-carousel.owl-drag .owl-item{
+  text-align: center;
+}
 .mobile-menu.owl-carousel.owl-drag .owl-item:first-child{
   margin-left: 10px;
 }
@@ -455,4 +458,15 @@
   letter-spacing: normal;
   text-align: left;
   color: #1e1e1e;
+}
+.mobile-pick.owl-carousel .owl-stage{
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.mobile-pick.owl-carousel.owl-drag .owl-item{
+  text-align: center;
+  width: 10% !important;
+}
+.mobile-pick.owl-carousel.owl-drag .owl-item:first-child{
+  margin-left: 10px;
 }

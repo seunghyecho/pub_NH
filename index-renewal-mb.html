@@ -70,13 +70,40 @@
         });
 
         $(".mobile-menu").owlCarousel({
-          autoWidth: true,
-          margin : 30
+          margin:10,
+          responsiveClass:true,
+          responsive:{
+              0:{
+                  items:5,
+              },
+              600:{
+                  items:5,
+                  nav:false
+              },
+              1000:{
+                  items:5,
+                  loop:false
+              }
+          }
         });
 
         $(".mobile-pick").owlCarousel({
-          autoWidth: true,
-          margin : 15
+          margin:25,
+          autoWidth: false,
+          responsiveClass:true,
+          responsive:{
+              0:{
+                  items:5,
+              },
+              600:{
+                  items:5,
+                  nav:false
+              },
+              1000:{
+                  items:5,
+                  loop:false
+              }
+          }
         });
 
 
