@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="lib/animate.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/mobile/common.css" />
     <!-- main renewal pc css -->
     <link rel="stylesheet" href="css/main-renewal-mb.css" />
     <!-- //css -->
@@ -26,6 +27,7 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/log.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/mobile/common.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="js/kakao_api.js"></script>
 
@@ -33,6 +35,14 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-154355321-1"
     ></script>
+    <script type="text/javascript">
+      $("document").ready(function(){
+        var num = "";
+        var snum = "";
+  
+        $(".smenu_" + num + "_" + snum).find("a").addClass("active");
+      });
+    </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -50,7 +60,7 @@
     </script>
     <script>
       $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
+        $(".mobile-banner").owlCarousel({
           loop: true,
           nav: true,
           items: 1,
@@ -59,14 +69,17 @@
           autoplay:true,
         });
 
-        $(window).scroll(function () {
-          $(".hd_top").addClass("fixed");
+        $(".mobile-menu").owlCarousel({
+          autoWidth: true,
+          margin : 30
         });
 
-        $("#menuAll > ul.main_menu > li > ul").hide();
-        $("#menuAll > ul.main_menu > li").on("click", function () {
-          $(this).children("ul").toggle();
+        $(".mobile-pick").owlCarousel({
+          autoWidth: true,
+          margin : 15
         });
+
+
       });
     </script>
 
@@ -110,8 +123,8 @@
           <div class="layout_wrap btmBorder">
             <nav id="gnb">
               <h2 class="txt_hide">주메뉴</h2>
-              <ul class="">
-                <li class="li01">
+              <ul class="owl-carousel mobile-menu">
+                <li class="item li01">
                   <a
                     onclick="goNhcmu('1', '1', '/shopMain.do', '_self')"
                     style="cursor: pointer"
@@ -178,7 +191,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="li02">
+                <li class="item li02">
                   <a
                     onclick="goNhcmu('2', '1', '/tripMain.do', '_self')"
                     style="cursor: pointer"
@@ -272,7 +285,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="li04">
+                <li class="item li04">
                   <a
                     onclick="goNhcmu('4', '1', '/golfMain.do', '_self')"
                     style="cursor: pointer"
@@ -314,7 +327,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="li05">
+                <li class="item li05">
                   <a
                     onclick="goNhcmu('5', '1', '/eduMain.do', '_self')"
                     style="cursor: pointer"
@@ -405,7 +418,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="li06">
+                <li class="item li06">
                   <a
                     onclick="goNhcmu('6', '1', '/contents_18.do', '_self')"
                     style="cursor: pointer"
@@ -435,7 +448,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="li09">
+                <li class="item li09">
                   <a
                     onclick="goNhcmu('9', '1', '/contents_29.do', '_self')"
                     style="cursor: pointer"
@@ -471,7 +484,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="li10">
+                <li class="item li10">
                   <a
                     onclick="goNhcmulist('12', '1', '/event/list.do', '_self', '4','401', '')"
                     style="cursor: pointer"
@@ -481,405 +494,189 @@
               </ul>
             </nav>
           </div>
-          <div class="manu_all_wrap" style="display: none">
-            <h2 class="txt_hide">전체메뉴</h2>
-            <nav id="menuAll" class="clearfix">
-              <ul class="main_menu clearfix layout_wrap">
-                <li>
-                  <a
-                    onclick="goNhcmu('1', '1', '/shopMain.do', '_self')"
-                    style="cursor: pointer"
-                    >쇼핑</a
-                  >
-                  <ul class="li01">
-                    <!-- 				<li id="menu_1_14"><a onclick="goNhcmu('1', '14', '/contents_43.do', '_self')" style="cursor:pointer;">TLC몰</a></li> -->
-
-                    <li id="menu_1_7">
-                      <a
-                        onclick="goNhcmu('1', '7', '/contents_6.do', '_self')"
-                        style="cursor: pointer"
-                        >11번가</a
-                      >
-                    </li>
-                    <li id="menu_1_12">
-                      <a
-                        onclick="goNhcmu('1', '12', '/contents_37.do', '_self')"
-                        style="cursor: pointer"
-                        >위메프</a
-                      >
-                    </li>
-                    <!-- 				<li id="menu_1_13"><a onclick="goNhcmu('1', '13', '/contents_39.do', '_self')" style="cursor:pointer;">골프큐브</a></li> -->
-                    <li id="menu_1_2">
-                      <a
-                        onclick="goNhcmu('1', '2', '/contents_1.do', '_self')"
-                        style="cursor: pointer"
-                        >농협몰</a
-                      >
-                    </li>
-                    <li id="menu_1_3">
-                      <a
-                        onclick="goNhcmu('1', '3', '/contents_2.do', '_self')"
-                        style="cursor: pointer"
-                        >INTERPARK</a
-                      >
-                    </li>
-                    <li id="menu_1_4">
-                      <a
-                        onclick="goNhcmu('1', '4', '/contents_3.do', '_self')"
-                        style="cursor: pointer"
-                        >AKmall.com</a
-                      >
-                    </li>
-                    <li id="menu_1_6">
-                      <a
-                        onclick="goNhcmu('1', '6', '/contents_5.do', '_self')"
-                        style="cursor: pointer"
-                        >LG생활건강</a
-                      >
-                    </li>
-                    <!-- <li id="menu_1_5"><a onclick="goNhcmu('1', '5', '/contents_4.do', '_self')" style="cursor:pointer;">Lotte.com</a></li> -->
-                    <li id="menu_1_11">
-                      <a
-                        onclick="goNhcmu('1', '11', '/contents_36.do', '_self')"
-                        style="cursor: pointer"
-                        >언니네 상회</a
-                      >
-                    </li>
-                  </ul>
+         
+        </div>
+        <div class="manu_all_wrap">
+          <h2 class="txt_hide">전체메뉴</h2>
+          <nav id="menuAll" class="clearfix">
+            <ul class="main_menu_top clearfix">
+              <h3 class="main_menu_top_title"><img src="/img/mobile/common/logo_menu.png"></h3>
+              <li class="li11"><a href="/mobile/main.do">홈</a></li>
+              <li class="li12"><a onclick="gomNhcmulist('11', '3', '/mobile/board/list.do', '_self', '1', '101', '')" style="cursor:pointer;background-size: 40px;">고객센터</a></li>
+              <li class="li13"><a onclick="gomNhcmulist('12', '1', '/mobile/event/list.do', '_self', '4', '401', '')" style="cursor:pointer;">이벤트</a></li>
+              <li class="li14"><a onclick="gomNhcmu('13', '1', 'http://m.nhcardsoho.com', '_blank')" style="cursor:pointer;">개인사업자</a></li>
+            </ul>
+            <ul class="main_menu clearfix">
+              <li class="li01"><a onclick="gomNhcmu('1', '1', '/mobile/shopMain.do', '_self')" style="cursor:pointer;">쇼핑</a></li>
+              <li class="li02"><a onclick="gomNhcmu('2', '1', '/mobile/tripMain.do', '_self')" style="cursor:pointer;">여행</a></li>
+        <!-- 			<li class="li03"><a onclick="gomNhcmu('3', '2', '/mobile/contents_46.do', '_self')" style="cursor:pointer;">액티비티</a></li> -->
+              <li class="li04"><a onclick="gomNhcmu('4', '1', '/mobile/contents_21.do', '_self')" style="cursor:pointer;">골프</a></li>
+              <li class="li05"><a onclick="gomNhcmu('5', '1', '/mobile/contents_22.do', '_self')" style="cursor:pointer;">교육</a></li>
+              <li class="li06"><a onclick="gomNhcmu('6', '1', '/mobile/contents_23.do', '_self')" style="cursor:pointer;">육아</a></li>
+              <li class="li07"><a onclick="gomNhcmu('7', '1', '/mobile/contents_27.do', '_self')" style="cursor:pointer;">뷰티</a></li>
+              <li class="li08"><a onclick="gomNhcmu('8', '1', '/mobile/contents_29.do', '_self')" style="cursor:pointer;">펫</a></li>
+              <li class="li09"><a onclick="gomNhcmu('9', '1', '/mobile/contents_34.do', '_self')" style="cursor:pointer;">라이프</a></li>
+        <!-- 			<li class="li10"><a onclick="gomNhcmu('10', '1', '/mobile/contents_38.do', '_self')" style="cursor:pointer;">티켓/쿠폰</a></li> -->
+            </ul>
+          </nav>
+          <div class="menu_etc">
+            <div class="menu_partners">
+              <h3>파트너스 혜택</h3>
+              <ul class="clearfix">
+        
+        <!-- 
+                <li class="li01">
+                  <a onclick="gomNhcmu('1', '12', '/mobile/contents_49.do', '_self')" style="cursor:pointer;">
+                    <dl class="">
+                      <dt>
+                        <img src="/img/mobile/common/partner_logo13.jpg" alt="">
+                      </dt>
+                      <dd>
+                        <span>신세계 S.I.VILLAGE</span>
+                        <p>SI포인트 최대 10%혜택</p>
+                      </dd>
+                    </dl>
+                  </a>
                 </li>
-                <li>
-                  <a
-                    onclick="goNhcmu('2', '1', '/tripMain.do', '_self')"
-                    style="cursor: pointer"
-                    >여행</a
-                  >
-                  <ul class="li02">
-                    <li id="menu_2_19">
-                      <a
-                        onclick="goNhcmu('2', '19', '/contents_13.do', '_self')"
-                        style="cursor: pointer"
-                        >국내&amp;제주</a
-                      >
-                    </li>
-                    <li id="menu_2_2">
-                      <a
-                        onclick="goNhcmu('2', '2', '/contents_7.do', '_self')"
-                        style="cursor: pointer"
-                        >해외 패키지</a
-                      >
-                    </li>
-                    <li id="menu_2_6">
-                      <a
-                        onclick="goNhcmu('2', '6', '/contents_8.do', '_self')"
-                        style="cursor: pointer"
-                        >익스피디아</a
-                      >
-                    </li>
-                    <!-- 				<li id="menu_2_27"><a onclick="goNhcmu('2', '27', '/contents_41.do', '_self')" style="cursor:pointer;">트립닷컴</a></li> -->
-                    <li id="menu_2_28">
-                      <a
-                        onclick="goNhcmu('2', '28', '/contents_44.do', '_self')"
-                        style="cursor: pointer"
-                        >공항주차</a
-                      >
-                    </li>
-                    <li id="menu_2_29">
-                      <a
-                        onclick="goNhcmu('2', '29', '/contents_45.do', '_self')"
-                        style="cursor: pointer"
-                        >스테이앤모어</a
-                      >
-                    </li>
-                    <!-- 				<li id="menu_2_26"><a onclick="goNhcmu('2', '26', '/contents_38.do', '_self')" style="cursor:pointer;">공항픽업</a></li> -->
-                    <li id="menu_2_7">
-                      <a
-                        onclick="goNhcmu('2', '7', '/contents_9.do', '_self')"
-                        style="cursor: pointer"
-                        >하나투어호텔</a
-                      >
-                    </li>
-                    <li id="menu_2_10">
-                      <a
-                        onclick="goNhcmu('2', '10', '/contents_10.do', '_self')"
-                        style="cursor: pointer"
-                        >항공</a
-                      >
-                    </li>
-                    <li id="menu_2_11">
-                      <a
-                        onclick="goNhcmu('2', '11', '/contents_11.do', '_self')"
-                        style="cursor: pointer"
-                        >골프/허니문</a
-                      >
-                    </li>
-                    <li id="menu_2_18">
-                      <a
-                        onclick="goNhcmu('2', '18', '/contents_12.do', '_self')"
-                        style="cursor: pointer"
-                        >크루즈</a
-                      >
-                    </li>
-                    <li id="menu_2_23">
-                      <a
-                        onclick="goNhcmu('2', '23', '/contents_14.do', '_self')"
-                        style="cursor: pointer"
-                        >고팜N체험</a
-                      >
-                    </li>
-                    <!-- <li id="menu_2_24"><a onclick="goNhcmu('2', '24', '/contents_15.do', '_self')" style="cursor:pointer;">입장권</a></li> -->
-                    <li id="menu_2_25">
-                      <a
-                        onclick="goNhcmu('2', '25', '/contents_16.do', '_self')"
-                        style="cursor: pointer"
-                        >맞춤여행</a
-                      >
-                    </li>
-                  </ul>
+         -->
+        
+                <li class="li01">
+                  <a onclick="gomNhcmu('1', '7', '/mobile/contents_6.do', '_self')" style="cursor:pointer;">
+                    <dl class="">
+                      <dt>
+                        <img src="/img/mobile/common/partner_logo11_1.jpg" alt="">
+                      </dt>
+                      <dd>
+                        <span>11번가</span>
+                        <p>NH포인트 5% 추가적립</p>
+                      </dd>
+                    </dl>
+                  </a>
                 </li>
-                <li>
-                  <a
-                    onclick="goNhcmu('4', '1', '/golfMain.do', '_self')"
-                    style="cursor: pointer"
-                    >골프</a
-                  >
-                  <ul class="li04">
-                    <li id="menu_4_2">
-                      <a
-                        onclick="goNhcmu('4', '2', '/golfMain.do', '_self')"
-                        style="cursor: pointer"
-                        >부킹서비스</a
-                      >
-                    </li>
-                    <li id="menu_4_3">
-                      <a
-                        onclick="goNhcmu('4', '3', '/golfMain.do', '_self')"
-                        style="cursor: pointer"
-                        >소셜커머스</a
-                      >
-                    </li>
-                    <li id="menu_4_4">
-                      <a
-                        onclick="goNhcmu('4', '4', '/golfMain.do', '_self')"
-                        style="cursor: pointer"
-                        >골프 여행 서비스</a
-                      >
-                    </li>
-                    <li id="menu_4_5">
-                      <a
-                        onclick="goNhcmu('4', '5', '/golfMain.do', '_self')"
-                        style="cursor: pointer"
-                        >제주 지역 렌트카</a
-                      >
-                    </li>
-                  </ul>
+                <li class="li02">
+                  <a onclick="gomNhcmu('1', '10', '/mobile/contents_43.do', '_self')" style="cursor:pointer;">
+                    <dl class="">
+                      <dt>
+                        <img src="/img/mobile/common/partner_logo_m_wmp.jpg" alt="">
+                      </dt>
+                      <dd>
+                        <span>위메프</span>
+                        <p>NH포인트 1% 적립</p>
+                      </dd>
+                    </dl>
+                  </a>
                 </li>
-                <li>
-                  <a
-                    onclick="goNhcmu('5', '1', '/eduMain.do', '_self')"
-                    style="cursor: pointer"
-                    >교육</a
-                  >
-                  <ul class="li05">
-                    <li id="menu_5_2">
-                      <a
-                        onclick="goNhcmu('5', '2', '/eduMain.do', '_self')"
-                        style="cursor: pointer"
-                        >생생 외국어</a
-                      >
-                    </li>
-                    <li id="menu_5_3">
-                      <a
-                        onclick="goNhcmu('5', '3', '/eduMain.do', '_self')"
-                        style="cursor: pointer"
-                        >자녀 학습</a
-                      >
-                    </li>
-                    <li id="menu_5_4">
-                      <a
-                        onclick="goNhcmu('5', '4', '/eduMain.do', '_self')"
-                        style="cursor: pointer"
-                        >교육 컨설팅</a
-                      >
-                    </li>
-                    <li id="menu_5_5">
-                      <a
-                        onclick="goNhcmu('5', '5', '/eduMain.do', '_self')"
-                        style="cursor: pointer"
-                        >교양 강좌</a
-                      >
-                    </li>
-                    <li id="menu_5_6">
-                      <a
-                        onclick="goNhcmu('5', '6', '/eduMain.do', '_self')"
-                        style="cursor: pointer"
-                        >생활/여가</a
-                      >
-                    </li>
-                    <li id="menu_5_7">
-                      <a
-                        onclick="goNhcmu('5', '7', '/eduMain.do', '_self')"
-                        style="cursor: pointer"
-                        >홈닥터</a
-                      >
-                    </li>
-                    <li id="menu_5_8">
-                      <a
-                        onclick="goNhcmu('5', '8', '/eduMain.do', '_self')"
-                        style="cursor: pointer"
-                        >운세</a
-                      >
-                    </li>
-                    <li id="menu_5_9">
-                      <a
-                        onclick="goNhcmu('5', '9', '/eduMain.do', '_self')"
-                        style="cursor: pointer"
-                        >프리미엄강좌</a
-                      >
-                    </li>
-                    <li id="menu_5_10">
-                      <a
-                        onclick="goNhcmu('5', '10', '/eduMain.do', '_self')"
-                        style="cursor: pointer"
-                        >이용 안내</a
-                      >
-                    </li>
-                    <li id="menu_5_11">
-                      <a
-                        onclick="goNhcmu('5', '11', '/eduMain.do', '_self')"
-                        style="cursor: pointer"
-                        >이벤트</a
-                      >
-                    </li>
-                    <li id="menu_5_12">
-                      <a
-                        onclick="goNhcmu('5', '12', '/eduMain.do', '_self')"
-                        style="cursor: pointer"
-                        >멤버십</a
-                      >
-                    </li>
-                  </ul>
+        <!-- 				<li class="li03">
+                  <a onclick="gomNhcmu('1', '11', '/mobile/contents_44.do', '_self')" style="cursor:pointer;">
+                    <dl class="">
+                      <dt>
+                        <img src="/img/mobile/common/partner_logo12.jpg" alt="">
+                      </dt>
+                      <dd>
+                        <span>골프큐브</span>
+                        <p>5%할인+2%적립</p>
+                      </dd>
+                    </dl>
+                  </a>
+                </li> -->
+                <li class="li04">
+                  <a onclick="gomNhcmu('1', '3', '/mobile/contents_2.do', '_self')" style="cursor:pointer;">
+                    <dl class="">
+                      <dt>
+                        <img src="/img/mobile/common/partner_logo01.jpg" alt="">
+                      </dt>
+                      <dd>
+                        <span>인터파크 모바일</span>
+                        <p>포인트 적립 0.3%</p>
+                      </dd>
+                    </dl>
+                  </a>
                 </li>
-                <li>
-                  <a
-                    onclick="goNhcmu('6', '1', '/contents_18.do', '_self')"
-                    style="cursor: pointer"
-                    >육아</a
-                  >
-                  <ul class="li06">
-                    <li id="menu_6_1">
-                      <a
-                        onclick="goNhcmu('6', '1', '/contents_18.do', '_self')"
-                        style="cursor: pointer"
-                        >산후 조리원</a
-                      >
-                    </li>
-                    <!-- 				<li id="menu_6_2"><a onclick="goNhcmu('6', '2', '/contents_19.do', '_self')" style="cursor:pointer;">베이비시터</a></li>
-							<li id="menu_6_3"><a onclick="goNhcmu('6', '3', '/contents_20.do', '_self')" style="cursor:pointer;">키즈 카페</a></li> -->
-                    <li id="menu_6_4">
-                      <a
-                        onclick="goNhcmu('6', '4', '/contents_21.do', '_self')"
-                        style="cursor: pointer"
-                        >출산육아용품몰</a
-                      >
-                    </li>
-                  </ul>
+                <li class="li05">
+                  <a onclick="gomNhcmu('1', '4', '/mobile/contents_3.do', '_self')" style="cursor:pointer;">
+                    <dl class="">
+                      <dt>
+                        <img src="/img/mobile/common/partner_logo02.jpg" alt="">
+                      </dt>
+                      <dd>
+                        <span>AK몰</span>
+                        <p>즉시할인 2%</p>
+                      </dd>
+                    </dl>
+                  </a>
                 </li>
-                <li>
-                  <a
-                    onclick="goNhcmu('7', '1', '/contents_22.do', '_self')"
-                    style="cursor: pointer"
-                    >뷰티</a
-                  >
-                  <ul class="li07">
-                    <li id="menu_7_1">
-                      <a
-                        onclick="goNhcmu('7', '1', '/contents_22.do', '_self')"
-                        style="cursor: pointer"
-                        >두피 관리샵</a
-                      >
-                    </li>
-                    <!-- <li id="menu_7_2"><a onclick="goNhcmu('7', '2', '/contents_23.do', '_self')" style="cursor:pointer;">네일숍</a></li> -->
-                  </ul>
+                <li class="li06">
+                  <a onclick="gomNhcmu('1', '6', '/mobile/contents_5.do', '_self')" style="cursor:pointer;">
+                    <dl class="">
+                      <dt>
+                        <img src="/img/mobile/common/partner_logo04.jpg" alt="">
+                      </dt>
+                      <dd>
+                        <span>LG생활건강</span>
+                        <p>10 ~ 20% 할인</p>
+                      </dd>
+                    </dl>
+                  </a>
                 </li>
-                <li>
-                  <a
-                    onclick="goNhcmu('8', '1', '/contents_24.do', '_self')"
-                    style="cursor: pointer"
-                    >펫</a
-                  >
-                  <ul class="li08">
-                    <li id="menu_8_1">
-                      <a
-                        onclick="goNhcmu('8', '1', '/contents_24.do', '_self')"
-                        style="cursor: pointer"
-                        >펫 쇼핑몰</a
-                      >
-                    </li>
-                    <li id="menu_8_2">
-                      <a
-                        onclick="goNhcmu('8', '2', '/contents_25.do', '_self')"
-                        style="cursor: pointer"
-                        >동물병원</a
-                      >
-                    </li>
-                    <li id="menu_8_3">
-                      <a
-                        onclick="goNhcmu('8', '3', '/contents_26.do', '_self')"
-                        style="cursor: pointer"
-                        >카페·펜션·호텔</a
-                      >
-                    </li>
-                    <li id="menu_8_4">
-                      <a
-                        onclick="goNhcmu('8', '4', '/contents_27.do', '_self')"
-                        style="cursor: pointer"
-                        >교육·미용·서비스</a
-                      >
-                    </li>
-                    <li id="menu_8_5">
-                      <a
-                        onclick="goNhcmu('8', '5', '/contents_28.do', '_self')"
-                        style="cursor: pointer"
-                        >식품·용품</a
-                      >
-                    </li>
-                  </ul>
+        <!-- 				<li class="li07">
+                  <a onclick="gomNhcmu('10', '2', '/mobile/contents_39.do', '_self')" style="cursor:pointer;">
+                    <dl class="">
+                      <dt>
+                        <img src="/img/mobile/common/partner_logo08.jpg" alt="">
+                      </dt>
+                      <dd>
+                        <span>땡큐폰</span>
+                        <p>포인트 적립 0.3%</p>
+                      </dd>
+                    </dl>
+                  </a>
+                </li> -->
+                <li class="li08">
+                  <a onclick="gomNhcmu('1', '2', '/mobile/contents_1.do', '_self')" style="cursor:pointer;">
+                    <dl class="">
+                      <dt>
+                        <img src="/img/mobile/common/partner_logo07.jpg" alt="">
+                      </dt>
+                      <dd>
+                        <span>농협몰</span>
+                        <p style="letter-spacing:-2px;">NH 포인트 사용</p>
+                      </dd>
+                    </dl>
+                  </a>
                 </li>
-                <li>
-                  <a
-                    onclick="goNhcmu('9', '1', '/contents_29.do', '_self')"
-                    style="cursor: pointer"
-                    >라이프</a
-                  >
-                  <ul class="li09">
-                    <li id="menu_9_1">
-                      <a
-                        onclick="goNhcmu('9', '1', '/contents_29.do', '_self')"
-                        style="cursor: pointer"
-                        >심리상담</a
-                      >
-                    </li>
-                    <li id="menu_9_2">
-                      <a
-                        onclick="goNhcmu('9', '2', '/contents_30.do', '_self')"
-                        style="cursor: pointer"
-                        >자동차보험</a
-                      >
-                    </li>
-                    <!-- <li id="menu_9_3"><a onclick="goNhcmu('9', '3', '/contents_31.do', '_self')" style="cursor:pointer;">정기배송</a></li> -->
-                    <li id="menu_9_4">
-                      <a
-                        onclick="goNhcmu('9', '4', '/contents_32.do', '_self')"
-                        style="cursor: pointer"
-                        >상조</a
-                      >
-                    </li>
-                  </ul>
+        <!-- 				<li class="li09">
+                  <a onclick="gomNhcmu('1', '5', '/mobile/contents_4.do', '_self')" style="cursor:pointer;">
+                    <dl class="">
+                      <dt>
+                        <img src="/img/mobile/common/partner_logo06.jpg" alt="">
+                      </dt>
+                      <dd>
+                        <span>롯데닷컴</span>
+                        <p>웰컴쿠폰 등록하기</p>
+                      </dd>
+                    </dl>
+                  </a>
+                </li> -->
+                <li class="li10">
+                  <a onclick="gomNhcmu('1', '9', '/mobile/contents_42.do', '_self')" style="cursor:pointer;">
+                    <dl class="">
+                      <dt>
+                        <img src="/img/mobile/common/partner_logo10.jpg" style="height:18px;" alt="">
+                      </dt>
+                      <dd>
+                        <span>언니네상회</span>
+                        <p>1% 추가적립</p>
+                      </dd>
+                    </dl>
+                  </a>
                 </li>
               </ul>
-            </nav>
-            <!-- <button class="menu_all_close">전체메뉴 닫기</button> -->
+            </div>
+            <!-- <div class="menu_banner">
+              <a href="#" class="img_box"><img src="/img/mobile/common/menu_banner.jpg" alt="인기공연 농협카드로 40% 할인받으세요"></a>
+            </div> -->
           </div>
+          <button class="menu_all_close">전체메뉴 닫기</button>
         </div>
       </header>
 
@@ -890,7 +687,7 @@
           <div class="content content01">
             <div class="inner">
               <div class="left">
-                <div class="owl-carousel owl-theme">
+                <div class="mobile-banner owl-carousel owl-theme">
                   <div class="owl-stage-outer">
                     <div class="owl-stage">
                       <div class="owl-item">
@@ -956,44 +753,44 @@
           <div class="content content02">
             <div class="inner">
               <h1>채움스케치 PICK</h1>
-              <ul>
-                <li>
+              <ul class="mobile-pick owl-carousel">
+                <li class="item">
                   <a href="#">
                     <div class="icon"></div>
                     <p>쇼핑</p>
                   </a>
                 </li>
-                <li>
+                <li class="item">
                   <a href="#">
                     <div class="icon"></div>
                     <p>여행</p>
                   </a>
                 </li>
-                <li>
+                <li class="item">
                   <a href="#">
                     <div class="icon"></div>
                     <p>골프</p>
                   </a>
                 </li>
-                <li>
+                <li class="item">
                   <a href="#">
                     <div class="icon"></div>
                     <p>교육</p>
                   </a>
                 </li>
-                <li>
+                <li class="item">
                   <a href="#">
                     <div class="icon"></div>
                     <p>육아</p>
                   </a>
                 </li>
-                <li>
+                <li class="item">
                   <a href="#">
                     <div class="icon"></div>
                     <p>라이프</p>
                   </a>
                 </li>
-                <li>
+                <li class="item">
                   <a href="#">
                     <div class="icon"></div>
                     <p>이벤트</p>
