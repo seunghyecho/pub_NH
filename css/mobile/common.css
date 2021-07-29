@@ -1,4 +1,4 @@
-
+/* 202107 : s*/
  html {
     min-width: 100%;
     font-size: 12px;
@@ -129,8 +129,10 @@
   #footer .ft_btm .inner span.address:after {
     display: none;
   }
+
+  /* 202107 : e */
   
-  /* 모바일 메뉴 팝업 스타일 : s */
+  /* /* 202107 모바일 메뉴 팝업 스타일 복붙 : s */
 #gnb .owl-stage-outer { height: 52px; }
 #gnb .gnb_list .owl-item > div > a { position: relative; display: table-cell; height: 52px; padding: 0 5px; font-size: 16px; font-weight: 400; vertical-align: middle; color: #010101; /*add 190614*/text-align: center; }/*DRGN 191618*/
 /*add start 190614*/
@@ -288,4 +290,4 @@ display: none;
 .menu_partners > ul > li > a > dl > dd > span{ color: #5134a5; font-size: 13px;}
 .menu_partners > ul > li > a > dl > dd > p{font-size: 15px;}
 
-/* 모바일 메뉴 팝업 스타일 : e */
+/* /* 202107 모바일 메뉴 팝업 스타일 복붙 : e */
