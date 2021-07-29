@@ -425,3 +425,29 @@
 .content04 ul li:hover a .des .tit {
   color: #488ef6;
 }
+
+/* 상단 메뉴 */
+.hd_bottom.renewal_hd_bottom{
+    display: flex;
+}
+.hd_bottom.renewal_hd_bottom .all_menu_wrap{
+  position: unset;
+  width: auto;
+  margin: 0;
+}
+.hd_bottom.renewal_hd_bottom .depth01 {
+  width: 100% !important;
+}
+.hd_bottom.renewal_hd_bottom #gnb > ul > li > div{
+  position: fixed;
+  top: 97px;
+  left: 0;
+  margin-left: 0;
+  width: 100%;
+  padding-bottom: 0;
+  background-color: #fafafa;
+  box-shadow: none;
+  z-index: 2;
+  opacity: 1;
+  visibility: visible;
+}

@@ -1,23 +1,16 @@
 @charset "UTF-8";
-#header {  height: 163px;}/*DRGN 190620*/
 .img-responsive{display: block; max-width: 100%; height: auto;}
 legend,caption{display: none;}
 
-#gnb > ul > li > div {    position: absolute; top: 62px; left: 0; margin-left: 0; width: 100%; padding-bottom: 0; background-color: #fafafa; box-shadow: none;
-    z-index: 2;  opacity: 1;  visibility: visible; transition: all 0.1s; -webkit-transition: all 0.1s; display: none; border-bottom: 2px solid #fc7100;}
+#gnb > ul > li > div { position: absolute; top: 62px; left: 0; margin-left: 0; width: 100%; padding-bottom: 0; background-color: #fafafa; box-shadow: none; z-index: 2;  opacity: 1;  visibility: visible; transition: all 0.1s; -webkit-transition: all 0.1s; display: none; border-bottom: 2px solid #fc7100;}
 
 .infant_head #gnb > ul { text-align: center;}
 .life_head #gnb > ul { text-align: right;}
 .pet_head #gnb > ul { text-align: right;}
-.golf_head #gnb > ul {}
 .edu_head #gnb > ul { text-align: center;}
 .coupon_head #gnb > ul { text-align: right;}
 .beauty_head #gnb > ul { text-align: center;}
 .leisure_head #gnb > ul .depth02 li:first-child {margin-left: 175px;}
-.shopping_head{height:213px;}
-.shopping_head #gnb > ul {}
-.customer_head #gnb > ul {}
-
 
 .infant_head #gnb > ul > li > div{border-bottom: 2px solid #f74db5;}
 .life_head #gnb > ul > li > div{border-bottom: 2px solid #ed2323;}
@@ -31,7 +24,6 @@ legend,caption{display: none;}
 .customer_head #gnb > ul > li > div{border-bottom: 1px solid #dbe0e5;}
 
 .all_menu_wrap { position: relative; width:940px; margin:0 auto;}
-.hd_bottom button.menu_all_open {  position: absolute !important;  top:-60px !important; right: 10px !important }
 
 #gnb > ul > li:hover > div { margin-left: 0 !important; opacity: 1; visibility: visible; }
 #gnb > ul > li > div > ul > li { text-align: center; display: inline-block;  margin-right: 30px;}
@@ -40,6 +32,7 @@ legend,caption{display: none;}
 #gnb > ul > li.on > div{display: block;}
 #gnb > ul > li {    position: inherit;}
 #gnb {position: relative; margin-left: 0;}
+
 .hd_bottom button.menu_all_open {
     overflow: hidden;
     position: inherit;
@@ -48,16 +41,17 @@ legend,caption{display: none;}
     width: 30px;
     height: 30px;
     margin-top: 0;
-    background: url(/img/common/menu_all_open.png) no-repeat center center;
+    background: url(../img/common/menu-icon.png) no-repeat center center;
     text-indent: -9999px;
     cursor: pointer;
     margin: 15px 0;
 }
+
 .depth01{ width: 940px !important; margin: 0 auto;}
 .depth02 ul{width: 960px !important; margin: 0 auto;}
 #gnb > ul > li > a { position: relative; padding: 17px 2px; font-size: 18px;}/*DRGN 200312*/
 #gnb > ul > li > a:before { content: ''; display: block; position: absolute; top: inherit; bottom: 0; left: 0; width: 100%; height: 5px; opacity: 0; transition: all 0.5s; -webkit-transition: all 0.5s; }
-#gnb > ul > li > a:before { background-color: #fc7100 ; }
+/* #gnb > ul > li > a:before { background-color: #fc7100 ; } */
 #gnb > ul > li > div > ul > li > a{color: #303131; text-decoration: none;}
 #gnb > ul > .li_customer > div > ul > li > a{position: relative;}
 #gnb > ul > .li_customer > div > ul > li > a:before {

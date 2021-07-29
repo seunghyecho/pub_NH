@@ -228,7 +228,7 @@ a:focus {
 #gnb > ul > li {
   float: left;
   position: relative;
-  padding: 0 25px;
+  padding: 0 20px;
   cursor: pointer;
 }
 #gnb > ul > li:last-child {
@@ -255,7 +255,7 @@ a:focus {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-#gnb > ul > li.li01 > a:before {
+/* #gnb > ul > li.li01 > a:before {
   background-color: #e11492;
 }
 #gnb > ul > li.li02 > a:before {
@@ -284,7 +284,7 @@ a:focus {
 }
 #gnb > ul > li.li10 > a:before {
   background-color: #4d2d9c;
-}
+} */
 #gnb > ul > li:hover > a:before {
   opacity: 1;
 }
@@ -426,6 +426,9 @@ a:focus {
 }
 #gnb > ul > li > div > ul {
   padding: 9px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 } /*DRGN 190620*/
 #gnb > ul > li > div > ul > li {
   text-align: center;
